@@ -6,7 +6,9 @@ Incluye diez algoritmos de hipo/hipernatremia, hipo/hiperpotasemia, hipo/hiperca
 
 ## Abrir sin servidor
 
-La pantalla de configuración del entorno no ofrece vista previa web. Para ver la aplicación, generar una versión independiente:
+La pantalla de configuración del entorno no ofrece vista previa web ni descarga mediante enlaces a rutas internas. La versión de entrega está en `Medinterna.html`, en la raíz de este repositorio. Para descargarla, usar [el ZIP de la rama del prototipo](https://github.com/miguelrm9898-maker/Medinterna/archive/refs/heads/codex/medinterna-prototipo.zip), descomprimirlo y abrir ese archivo con Chrome o Edge en una computadora.
+
+Para volver a generar una versión independiente a partir del código:
 
 ```bash
 cd /workspace/Medinterna
@@ -69,4 +71,4 @@ La ampliación de dominios se guardó como borrador de configuración. Guardar e
 - `server.mjs`: servidor estático, lista explícita de archivos públicos y política CSP.
 - `tests/`: comprobaciones del software.
 
-El prototipo no se ha subido a GitHub ni publicado. Los nuevos archivos quedan disponibles en el checkout para revisión.
+El código y la versión HTML independiente están en la rama `codex/medinterna-prototipo` del repositorio de GitHub seleccionado. Se verificó la descarga ZIP y su HTML. No se ha desplegado un sitio web ni completado la revisión bibliográfica o clínica.
