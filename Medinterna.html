@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#143d47">
+  <meta name="description" content="Clasificación y algoritmos de apoyo para trastornos hidroelectrolíticos en adultos. Borrador clínico con referencias y límites explícitos.">
+  <title>Medinterna · Equilibrio hidroelectrolítico</title>
+  <style>
+:root{--bg:#f5f7f7;--card:#fff;--ink:#21383e;--muted:#6c7d81;--line:#e2e9e9;--teal:#23675d;--teal-dark:#143d47;--teal-light:#e9f4ef;--amber:#8b681e;--amber-light:#fcf7e9;--red:#a94640;--red-light:#fff1ef;--radius:14px;--shadow:0 3px 14px #153d4510;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);font-synthesis:none}
+*{box-sizing:border-box}body{margin:0;font-size:14px;line-height:1.55}button,input,select{font:inherit}button,a,input,select,summary{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:disabled{cursor:default}button,a{touch-action:manipulation}a{color:var(--teal)}button{color:inherit}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #479888;outline-offset:4px}input:focus,select:focus{outline:2px solid #579b8d;outline-offset:1px}h1,h2,h3,p{margin:0}h1{font-size:34px;line-height:1.2;letter-spacing:-1.1px;font-weight:650}h2{font-size:18px;line-height:1.35;font-weight:650;letter-spacing:-.3px}h3{font-size:15px;line-height:1.4;font-weight:650}ul{margin:0;padding-left:19px}li+li{margin-top:10px}.icon{width:20px;height:20px;flex-shrink:0;vertical-align:middle}.small{font-size:12px}.muted{color:var(--muted)}.tiny-label,.eyebrow{font-size:10px;letter-spacing:1.35px;font-weight:750;color:var(--muted)}.eyebrow{color:var(--teal);margin-bottom:11px;font-size:11px}.skip-link{position:fixed;z-index:100;top:-80px;left:12px;background:white;padding:12px}.skip-link:focus{top:12px}.sidebar{width:235px;position:fixed;inset:0 auto 0 0;background:var(--teal-dark);color:#e8efef;padding:31px 18px 18px;display:flex;flex-direction:column;z-index:20}.brand{display:flex;gap:10px;align-items:center;text-decoration:none;color:inherit;font-size:21px;font-weight:600;letter-spacing:-.5px;padding:0 9px}.brand-mark{width:36px;height:36px;display:grid;place-items:center;background:#fbfffc;color:var(--teal-dark);border-radius:11px}.brand-mark .icon{width:26px;height:26px}.brand-sub{display:block;font-size:8px;letter-spacing:1.8px;font-weight:500;color:#b1c8c7;margin-top:2px}.workspace-label{font-size:9px;font-weight:650;letter-spacing:1.5px;color:#91aeaf;margin:52px 14px 13px}.nav-item{display:flex;align-items:center;gap:11px;background:transparent;color:#b6cdce;border:0;border-radius:8px;width:100%;padding:13px 13px;text-align:left;font-size:13px;margin-bottom:5px;transition:background .15s}.nav-item:hover{background:#ffffff0d}.nav-item.active{background:#ffffff14;color:white;box-shadow:inset 3px 0 #8fcab6}.nav-item .icon{width:18px;height:18px}.nav-count{font-size:10px;padding:1px 6px;background:#ffffff17;border-radius:5px;margin-left:auto}.sidebar-note{margin:40px 12px 0;padding-top:23px;border-top:1px solid #ffffff18}.sidebar-note .tiny-label{color:#99b7b5;font-size:9px}.sidebar-note p{margin:10px 0 15px;font-size:13px;line-height:1.8}.sidebar-note .muted{color:#9bb5b6;font-size:11px;line-height:1.8;display:block}.sidebar-bottom{margin-top:auto;border-top:1px solid #ffffff12;padding:20px 12px 0;display:flex;gap:7px;align-items:center;font-size:11px;color:#9eb8ba}.sidebar-bottom>span:last-child{margin-left:auto}.version-dot{width:5px;height:5px;border-radius:50%;background:#8bb5a6}.workspace{margin-left:235px}.topbar{height:70px;background:#fff;border-bottom:1px solid var(--line);padding:0 40px;display:flex;align-items:center;justify-content:space-between;font-size:12px;color:var(--muted);gap:14px}.slash{padding:0 10px;color:#bac4c6}.review-pill{display:flex;align-items:center;gap:7px;border:1px solid #e9dfc4;border-radius:30px;padding:6px 11px;color:var(--amber);background:#fffaf0;font-size:11px}.review-pill .icon{width:13px;height:13px}main{max-width:1330px;margin:auto;padding:39px 40px 50px;min-height:calc(100vh - 133px)}main:focus{outline:none}.page-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:28px}.page-heading p{color:var(--muted);margin-top:12px;font-size:14px}.button{display:inline-flex;justify-content:center;align-items:center;gap:9px;border-radius:8px;padding:11px 15px;font-size:12px;font-weight:650;text-decoration:none;border:1px solid transparent;white-space:nowrap}.button .icon{width:16px;height:16px}.button.primary{background:var(--teal);color:white;box-shadow:0 3px 6px #23675d16}.button.primary:hover{background:#1b554d}.button.secondary{background:white;border-color:#d9e3e1;color:#475e62}.button.secondary:hover{background:#eef6f2}.button.ghost{background:transparent;color:var(--muted)}.text-link{border:0;padding:0;background:transparent;display:inline-flex;gap:6px;align-items:center;color:var(--teal);font-size:12px;font-weight:650;text-decoration:none;text-align:left}.text-link:hover{text-decoration:underline}.text-link .icon{width:15px;height:15px}.workflow{display:flex;align-items:center;gap:20px;padding:18px 22px;background:var(--teal-light);border:1px solid #dceae2;border-radius:11px;margin-bottom:18px;font-size:11px}.workflow-title{display:flex;align-items:center;gap:9px;color:var(--teal);font-weight:700;padding-right:18px;border-right:1px solid #caddd3;white-space:nowrap}.workflow-step{display:flex;gap:8px;align-items:center;flex:1;color:#4b6660}.workflow-step>span{font-size:10px;font-weight:700;border:1px solid #a4c8b5;border-radius:50%;width:19px;height:19px;display:grid;place-items:center;flex-shrink:0}.scope-note{display:flex;gap:10px;color:#7b7057;background:#f9f6ed;border:1px solid #ece5d5;border-radius:9px;padding:11px 14px;font-size:11px;line-height:1.8;margin-bottom:25px}.scope-note>.icon{width:15px;height:15px;margin-top:2px}.scope-note strong{font-weight:650}.scope-note .text-link{font-size:11px;margin-left:4px}.evaluation-layout{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:24px;align-items:start}.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}.lab-card{padding:24px}.card-heading{display:flex;align-items:center;gap:11px;margin-bottom:27px}.card-heading h2{font-size:17px}.card-heading p{font-size:11px;color:var(--muted);margin-top:3px}.section-icon{width:37px;height:37px;display:grid;place-items:center;background:#edf5f2;color:var(--teal);border-radius:10px;flex-shrink:0}.label-chip{font-size:9px;letter-spacing:1px;color:#607772;background:#f3f7f5;border:1px solid #dce7e2;padding:3px 6px;border-radius:4px;margin-left:auto}.fields-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 17px}.field{display:flex;flex-direction:column;min-width:0}.field-label{font-size:12px;font-weight:650;display:flex;justify-content:space-between;align-items:baseline;gap:6px;line-height:1.3;margin-bottom:8px}.field-label>span{font-size:10px;font-weight:400;color:var(--muted);flex-shrink:0}.field input,.field select{background:#fbfcfc;border:1px solid #dce4e5;border-radius:7px;width:100%;padding:10px 11px;min-height:43px;color:var(--ink);font-size:14px}.field input::placeholder{color:#acb7b9}.field select{font-size:11px;max-width:100%;white-space:normal;padding-right:25px}.field-hint{font-size:10px;color:#839295;margin-top:5px}.additional-labs{margin-top:24px;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.additional-labs summary{font-size:12px;font-weight:600;color:var(--teal);cursor:pointer}.additional-labs summary span{display:block;font-weight:400;font-size:10px;color:var(--muted);padding-left:14px;margin-top:4px}.additional-grid{margin:21px 0}.context-title{font-size:9px;letter-spacing:1.1px;font-weight:750;color:var(--muted);margin:24px 0 12px}.flags{display:grid;gap:10px}.flag{display:flex;gap:9px;align-items:flex-start;cursor:pointer}.flag input{accent-color:var(--teal);width:15px;height:15px;margin:3px 0 0;flex-shrink:0}.flag strong{font-size:11px;font-weight:600;display:block}.flag small{font-size:10px;display:block;color:var(--muted);margin-top:1px}.duration-field{margin:22px 0 0}.form-error{color:var(--red);font-size:12px;margin-top:13px}.form-error:empty{display:none}.form-actions{display:flex;gap:8px;margin-top:24px}.form-actions .primary{flex:1}.form-footnote{font-size:10px;color:var(--muted);line-height:1.7;margin-top:14px}.results-column{display:flex;flex-direction:column;gap:15px}.empty-results{padding:36px 28px}.empty-icon{width:60px;height:60px;border-radius:18px;background:#f1f6f4;border:1px solid #e0ebe4;display:grid;place-items:center;color:var(--teal);margin-bottom:24px}.empty-icon .icon{width:30px;height:30px}.empty-results .tiny-label{color:#7b938a}.empty-results h2{font-size:23px;letter-spacing:-.6px;margin:9px 0 14px}.empty-results>p{font-size:12px;color:var(--muted);line-height:1.9}.empty-list{padding-top:22px;display:grid;gap:13px;font-size:11px;color:#567269}.empty-list>span{display:flex;gap:8px;align-items:center}.empty-list .icon{width:15px;height:15px;color:#6da18b}.emergency-note{padding:20px;display:flex;gap:11px;background:#fffdfa;box-shadow:none;border-color:#eae4d9}.emergency-note>.icon{color:#9a7d4b;width:18px}.emergency-note h3{font-size:12px;color:#826b43;margin-bottom:7px}.emergency-note p{font-size:11px;line-height:1.8;color:#8b8372}.section-heading{display:flex;justify-content:space-between;align-items:center;gap:20px}.section-heading h2{font-size:17px}.quick-section{margin-top:32px}.quick-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:16px}.quick-card{border:1px solid var(--line);border-radius:10px;background:white;text-align:left;padding:17px;display:flex;align-items:center;gap:11px;box-shadow:var(--shadow)}.quick-card:hover{border-color:#91b5a8}.quick-card h3{font-size:12px}.quick-card p{font-size:10px;color:var(--muted);margin-top:3px}.quick-card>.icon{margin-left:auto;width:15px;color:#92a59e}.element-symbol{width:39px;height:39px;border-radius:11px;background:#edf5f1;color:var(--teal);font-size:16px;font-weight:650;display:grid;place-items:center;flex-shrink:0;letter-spacing:-.5px}.element-symbol.sodio{color:#51679a;background:#eef1f9}.element-symbol.potasio{color:#4a7d64;background:#edf5ec}.element-symbol.calcio{color:#996948;background:#faf0e8}.element-symbol.magnesio{color:#766497;background:#f3eef9}.element-symbol.fósforo{color:#3c7a88;background:#eaf4f5}.footer{font-size:10px;color:#93a0a3;border-top:1px solid var(--line);padding:22px 40px;display:flex;gap:20px;justify-content:space-between}.result-heading{margin:0 2px 2px}.result-heading h2{font-size:18px;margin-top:5px}.icon-button{width:34px;height:34px;background:white;border:1px solid var(--line);border-radius:8px;display:grid;place-items:center;flex-shrink:0;color:var(--muted)}.icon-button .icon{width:16px}.notice{display:flex;gap:10px;align-items:flex-start;font-size:11px;line-height:1.8;padding:12px 14px;border-radius:9px;border:1px solid}.notice.high{background:var(--red-light);border-color:#edd6d2;color:var(--red)}.notice.moderate{background:var(--amber-light);border-color:#ede2c4;color:var(--amber)}.notice>.icon{width:15px;height:15px;margin-top:2px}.result-card{padding:18px 20px;border-left:3px solid #b8d4c2}.result-card.high{border-left-color:#c97b6e}.result-card.moderate{border-left-color:#ccb16e}.result-top{display:flex;justify-content:space-between;align-items:center;gap:8px}.result-electrolyte{font-size:12px;font-weight:600}.status-badge{font-size:9px;padding:3px 7px;border-radius:5px}.status-badge.high{background:var(--red-light);color:var(--red)}.status-badge.moderate{background:var(--amber-light);color:var(--amber)}.status-badge.normal{background:var(--teal-light);color:var(--teal)}.result-number{font-size:31px;font-weight:650;letter-spacing:-1px;margin:7px 0 1px;line-height:1.3}.result-number>span{font-size:11px;font-weight:400;letter-spacing:0;color:var(--muted)}.result-card h3{font-size:12px}.result-card p{font-size:11px;line-height:1.8;color:var(--muted);margin-top:9px}.result-card .text-link{font-size:11px;margin-top:14px}.calculator-card{padding:21px}.calculator-card h2{display:flex;align-items:center;gap:8px;font-size:15px}.calculator-card h2 .icon{width:17px;color:var(--teal)}.calculation{border-top:1px solid var(--line);padding-top:15px;margin-top:17px}.calculation h3{font-size:11px}.calculation-value{font-size:23px;font-weight:600;margin:5px 0}.calculation-value span{font-size:10px;font-weight:400;color:var(--muted);margin-left:7px}.calculation code{display:block;font-size:10px;background:#f3f6f5;color:#648073;padding:7px 8px;border-radius:5px;white-space:normal}.calculation p{font-size:10px;color:var(--muted);line-height:1.8;margin:8px 0}.citations{display:flex;flex-wrap:wrap;gap:5px}.citation{border:1px solid #dce7e0;background:#f6faf7;border-radius:4px;padding:2px 6px;font-size:9px;display:flex;align-items:center;gap:5px;color:#5e7e6d}.citation .icon{width:10px;height:10px}.citation:hover{background:#e9f4ee}.results-footnote{font-size:10px;color:var(--muted);line-height:1.8;padding:0 3px}.library-toolbar{display:flex;flex-direction:column;gap:20px;margin-bottom:22px}.search-input{display:flex;gap:10px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:9px;padding:12px 15px;max-width:540px}.search-input .icon{width:17px;color:var(--muted)}.search-input input{width:100%;border:0;background:transparent;font-size:12px;color:var(--ink);outline:none}.search-input:focus-within{outline:2px solid #579b8d}.filter-tabs{display:flex;gap:6px;flex-wrap:wrap}.filter-tabs button{border:1px solid transparent;background:transparent;color:var(--muted);border-radius:7px;padding:7px 14px;font-size:12px}.filter-tabs button.selected{background:var(--teal-light);color:var(--teal);border-color:#d4e4da;font-weight:600}.protocol-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.protocol-card{padding:21px;text-align:left;display:flex;flex-direction:column;transition:transform .15s,border-color .15s}.protocol-card:hover{transform:translateY(-2px);border-color:#96b6a5}.protocol-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}.protocol-card h2{font-size:19px;margin-bottom:8px}.protocol-card>p{color:var(--muted);font-size:12px;line-height:1.8;flex:1}.protocol-card-footer{display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid var(--line);padding-top:15px;margin-top:21px;font-size:10px;color:#688272}.protocol-card-footer .icon{width:16px}.no-results{padding:25px;grid-column:1/-1}.protocol-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}.protocol-urgency{border:1px solid #ecd9d3;background:#fdf4f1;padding:17px 20px;border-radius:11px;display:flex;gap:13px;color:#965347;margin-bottom:15px}.protocol-urgency strong{font-size:12px}.protocol-urgency p{font-size:12px;line-height:1.8;margin-top:4px}.protocol-urgency>.icon{width:19px;margin-top:2px}.protocol-draft{font-size:11px;color:#8c7e60;margin-bottom:22px;line-height:1.8}.protocol-detail-layout{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:23px;align-items:start}.algorithm{display:flex;flex-direction:column;gap:21px}.algorithm-step{display:flex;gap:16px;padding:24px}.step-number{width:33px;height:33px;display:grid;place-items:center;color:var(--teal);background:var(--teal-light);border-radius:9px;font-size:12px;font-weight:700;flex-shrink:0}.step-content{min-width:0}.step-content>h2{margin:4px 0 18px;font-size:18px}.step-content ul{font-size:12px;line-height:1.9;color:#536a6d}.step-content li{padding-left:2px}.step-content li::marker{color:#8cb29f}.rationale{background:#f6f9f7;border-radius:8px;padding:13px 15px;margin-top:20px;border:1px solid #e4ece6}.rationale .tiny-label{font-size:8px;color:#749081}.rationale p{font-size:11px;line-height:1.9;color:#647c70;margin:5px 0 10px}.protocol-aside{display:flex;flex-direction:column;gap:17px}.protocol-aside .card{padding:20px;box-shadow:none}.protocol-aside h2{font-size:14px;margin-bottom:14px}.range-label{font-size:11px;font-weight:600;border-radius:5px;background:#f1f6f3;color:#567768;padding:7px 9px;margin-bottom:13px}.classification-row{padding:11px 0;border-bottom:1px solid var(--line);font-size:11px;display:flex;flex-direction:column;gap:4px}.classification-row:last-child{border-bottom:0;padding-bottom:0}.classification-row strong{font-weight:600;color:#4e6c60}.classification-row span{color:var(--muted);line-height:1.8}.pitfalls-card ul{font-size:11px;line-height:1.8;color:#8d7955}.source-mini{display:flex;align-items:flex-start;text-align:left;gap:9px;width:100%;border:0;border-top:1px solid var(--line);padding:13px 0;background:transparent}.source-mini>span{font-size:9px;color:var(--muted)}.source-mini strong{font-size:10px;line-height:1.7;font-weight:500;color:#536e63}.source-mini .icon{width:11px;height:11px;margin-left:auto;flex-shrink:0;color:var(--muted)}.protocol-sources>p{font-size:10px;margin-top:10px;line-height:1.8}.evidence-note{display:flex;gap:18px;background:#fcf8ed;border:1px solid #eadfc3;border-radius:12px;padding:24px}.section-icon.amber{background:#f1e8d0;color:var(--amber)}.evidence-note h2{font-size:16px;color:#8b6b2c}.evidence-note p{font-size:12px;line-height:1.9;color:#8a7a5b;margin-top:10px;max-width:900px}.reference-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin:24px 0}.reference-stats>div{background:white;border:1px solid var(--line);border-radius:10px;padding:18px 20px}.reference-stats strong{display:block;font-size:24px;letter-spacing:-.5px;color:#376859}.reference-stats span{font-size:10px;color:var(--muted)}.reference-stats>div:last-child strong{font-size:18px;margin-top:5px;margin-bottom:3px;color:var(--amber)}.reference-list{display:flex;flex-direction:column;gap:13px}.reference-card{display:flex;gap:20px;padding:23px 24px}.reference-number{font-size:12px;font-weight:650;color:#90a099;padding-top:3px}.reference-card>div{flex:1;min-width:0}.reference-meta{display:flex;gap:10px;align-items:center;font-size:10px;color:var(--muted);margin-bottom:8px}.year-badge{background:#eef5f1;color:#618273;border:1px solid #dfe9e2;padding:2px 6px;border-radius:4px;flex-shrink:0}.reference-card h2{font-size:16px;line-height:1.6}.reference-card p{font-size:11px;color:var(--muted);margin-top:8px;line-height:1.9}.reference-card .reference-authors{font-size:10px;margin-top:4px}.reference-bottom{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:14px}.verification-pending{font-size:9px;color:#9a8358}.reference-bottom a{font-size:11px;font-weight:600;text-decoration:none;display:flex;align-items:center;gap:7px}.reference-bottom a:hover{text-decoration:underline}.reference-bottom .icon{width:13px;height:13px}dialog{border:1px solid var(--line);border-radius:16px;padding:27px;max-width:530px;width:calc(100% - 32px);color:var(--ink);box-shadow:0 18px 80px #11252b25}dialog::backdrop{background:#142d3877;backdrop-filter:blur(2px)}.dialog-top{display:flex;gap:15px;align-items:center;justify-content:space-between;margin-bottom:20px}dialog h2{font-size:22px;line-height:1.5}dialog>p{font-size:12px;margin-top:12px;line-height:1.8}.source-scope{background:#f3f7f5;border:1px solid #e2ebe5;border-radius:9px;padding:15px;margin-top:20px;font-size:12px}.source-scope strong{font-size:11px;color:#597965}.source-scope p{margin-top:5px;color:var(--muted);line-height:1.9}dialog .verification-note{color:#988158;font-size:11px;margin-bottom:22px}#toast{position:fixed;bottom:24px;left:calc(50% + 110px);transform:translate(-50%,20px);padding:13px 21px;border:1px solid #bfd9cc;border-radius:10px;box-shadow:0 6px 30px #19302a22;background:#fff;color:var(--teal);font-size:12px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:40;max-width:calc(100% - 32px)}#toast.visible{opacity:1;transform:translate(-50%,0)}
+@media(min-width:1500px){.fields-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.additional-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.workflow{font-size:12px}}
+@media(max-width:1200px){main{padding:30px 25px 40px}.topbar{padding:0 25px}.sidebar{width:213px;padding-inline:13px}.workspace{margin-left:213px}.page-heading{align-items:flex-start;flex-direction:column;gap:15px}h1{font-size:30px}.workflow{gap:12px;padding:15px;flex-wrap:wrap}.workflow-title{width:100%;border:0;padding:0 0 5px}.workflow-step{min-width:145px}.protocol-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.protocol-detail-layout{grid-template-columns:minmax(0,1fr) 240px}.algorithm-step{padding:21px 18px;gap:12px}.quick-card{padding:13px}.quick-card>.icon{display:none}.quick-card .element-symbol{width:32px;height:32px;font-size:14px}.reference-stats{gap:10px}.reference-stats>div{padding:15px}.footer{padding-inline:25px}#toast{left:calc(50% + 106px)}}
+@media(max-width:980px){.evaluation-layout{grid-template-columns:1fr 1fr;gap:16px}.lab-card{padding:20px}.empty-results{padding:28px 22px}.card-heading{flex-wrap:wrap}.label-chip{display:none}.fields-grid{gap:15px 12px}.field-label{flex-wrap:wrap;gap:2px}.field-label>span{font-size:9px}.protocol-detail-layout{grid-template-columns:1fr}.protocol-aside{display:grid;grid-template-columns:1fr 1fr}.protocol-sources{grid-column:1/-1}.quick-grid{grid-template-columns:1fr}.quick-card>.icon{display:block}.quick-card{padding:15px}.quick-card p{margin-top:0}.reference-stats{grid-template-columns:repeat(2,1fr)}.footer{flex-direction:column;gap:5px}}
+@media(max-width:760px){.sidebar{position:static;width:auto;padding:16px 20px;background:#143d47;display:grid;grid-template-columns:1fr auto;gap:16px}.brand{padding:0;font-size:20px}.brand-sub{font-size:7px}.brand-mark{width:32px;height:32px}.sidebar nav{display:flex;gap:5px;grid-column:1/-1;margin:0 -5px}.nav-item{justify-content:center;white-space:nowrap;padding:11px 8px;font-size:11px;margin:0}.nav-item.active{box-shadow:inset 0 -2px #8fcab6}.nav-item .icon{width:16px;height:16px}.nav-count,.workspace-label,.sidebar-note{display:none}.sidebar-bottom{border:0;padding:0;margin:auto 0;font-size:10px}.sidebar-bottom>span:last-child{display:none}.workspace{margin:0}.topbar{height:49px;padding:0 20px;font-size:10px}.review-pill{font-size:9px;padding:4px 7px}.review-pill .icon{width:11px;height:11px}.slash{padding:0 6px}main{padding:28px 20px 35px}.page-heading{margin-bottom:24px}.page-heading p{font-size:12px;line-height:1.8;max-width:480px}h1{font-size:29px}.eyebrow{font-size:9px}.workflow{gap:12px;font-size:10px}.workflow-step{min-width:calc(50% - 12px);flex:0}.workflow-title{font-size:11px}.scope-note{font-size:10px;padding:10px 12px}.scope-note .text-link{font-size:10px}.evaluation-layout{grid-template-columns:1fr;gap:22px}.card-heading{flex-wrap:nowrap}.label-chip{display:block}.fields-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 18px}.field-label{flex-wrap:nowrap;font-size:12px}.field-label>span{font-size:10px}.flag strong{font-size:12px}.flag small{font-size:10px}.context-title{font-size:9px}.empty-results{padding:25px}.empty-icon{width:44px;height:44px;border-radius:13px;margin-bottom:19px}.empty-icon .icon{width:24px}.empty-results h2{font-size:21px}.empty-list{grid-template-columns:1fr 1fr;font-size:10px;gap:11px}.footer{padding:20px;font-size:9px}.protocol-card{padding:18px}.protocol-card h2{font-size:17px}.protocol-card>p{font-size:11px}.protocol-card-footer{font-size:9px}.protocol-grid{gap:12px}.protocol-aside{gap:12px}.algorithm-step{padding:21px;gap:12px}.step-content>h2{font-size:17px}.protocol-draft{font-size:10px}.protocol-urgency p{font-size:11px}.reference-card{padding:19px;gap:13px}.reference-card h2{font-size:14px}.reference-meta{font-size:9px}.reference-number{font-size:10px}.reference-bottom{align-items:flex-start;flex-direction:column;gap:10px}.evidence-note{padding:19px;gap:12px}.evidence-note .section-icon{width:30px;height:30px}.evidence-note h2{font-size:15px}.evidence-note p{font-size:11px}#toast{left:50%;width:max-content;max-width:calc(100% - 32px)}.results-column{gap:14px}.search-input{max-width:none}.filter-tabs button{padding:6px 9px;font-size:11px}}
+@media(max-width:390px){main{padding:24px 15px}.sidebar{padding:16px 15px}.topbar{padding:0 15px}.topbar>span{font-size:9px}.review-pill{font-size:8px}.nav-item{font-size:10px;gap:6px}.nav-item .icon{width:14px}.protocol-grid{grid-template-columns:1fr}.protocol-aside{grid-template-columns:1fr}.protocol-sources{grid-column:auto}.empty-list{grid-template-columns:1fr}.lab-card{padding:19px 16px}.fields-grid{gap:18px 12px}.field-label{font-size:11px}.field-label>span{font-size:9px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+@media print{body{background:white;color:#111;font-size:11px}.sidebar,.topbar,.footer,.protocol-nav,.protocol-draft .button,.skip-link,#toast,dialog{display:none!important}.workspace{margin:0}main{max-width:none;padding:0;min-height:0}.page-heading{margin:0 0 18px}.page-heading h1{font-size:26px}.page-heading p{font-size:11px}.protocol-detail-layout{display:block}.algorithm-step{break-inside:avoid;box-shadow:none;margin-bottom:14px;padding:15px;border-radius:4px}.step-content ul{font-size:10px;line-height:1.7}.rationale p{font-size:10px}.protocol-aside{display:block}.protocol-aside>.card{margin:15px 0;break-inside:avoid}.protocol-urgency{padding:10px;margin-bottom:10px}.protocol-urgency p{font-size:11px}.citations{display:none}.source-mini{padding:8px 0}.protocol-sources .source-mini{display:flex}.protocol-sources .source-mini::after{content:'Referencia pendiente de cotejo';font-size:8px;color:#777}.protocol-draft{font-size:10px;margin:10px 0}.reference-card{break-inside:avoid;box-shadow:none}.reference-bottom a::after{content:' (' attr(href) ')';font-size:8px;overflow-wrap:anywhere}.evidence-note,.workflow,.scope-note{box-shadow:none}.button{display:none}.protocol-grid{display:block}.protocol-card{display:block;break-inside:avoid;margin-bottom:15px}.card{box-shadow:none}a{color:inherit}.evidence-note{break-inside:avoid}}
+
+.print-references{display:none}
+@media(max-width:760px){.sidebar-bottom{grid-column:2;grid-row:1}.duration-field select{min-height:43px}}
+@media print{.print-references{display:block;margin-top:22px}.print-references h2{font-size:14px}.print-references li{font-size:9px;line-height:1.7;overflow-wrap:anywhere}.print-references a{font-size:8px}}
+
+</style>
+  <script type="module">
+// Pure functions. Units are explicit; these estimates never create treatment orders.
+const fields = {
+  sodium: { label: 'Sodio', unit: 'mmol/L', min: 80, max: 200, step: '0.1', normal: '135–145', placeholder: '140' },
+  potassium: { label: 'Potasio', unit: 'mmol/L', min: 0.5, max: 12, step: '0.1', normal: '3.5–5.0', placeholder: '4.0' },
+  calcium: { label: 'Calcio total', unit: 'mg/dL', min: 3, max: 25, step: '0.1', normal: '8.5–10.5', placeholder: '9.2' },
+  ionized: { label: 'Calcio ionizado', unit: 'mmol/L', min: 0.3, max: 3, step: '0.01', normal: '1.12–1.32', placeholder: '1.20' },
+  magnesium: { label: 'Magnesio', unit: 'mg/dL', min: 0.1, max: 20, step: '0.1', normal: '1.7–2.4', placeholder: '2.0' },
+  phosphate: { label: 'Fósforo', unit: 'mg/dL', min: 0.1, max: 20, step: '0.1', normal: '2.5–4.5', placeholder: '3.5' },
+  glucose: { label: 'Glucosa', unit: 'mg/dL', min: 20, max: 1500, step: '1', placeholder: '100' },
+  bun: { label: 'BUN (nitrógeno ureico)', unit: 'mg/dL', min: 1, max: 250, step: '1', placeholder: '14' },
+  weight: { label: 'Peso', unit: 'kg', min: 20, max: 350, step: '0.1', placeholder: '70' },
+  measuredOsm: { label: 'Osmolalidad medida', unit: 'mOsm/kg', min: 150, max: 500, step: '1', placeholder: '285' }
+};
+
+function parseValue(value, key) {
+  if (value == null || String(value).trim() === '') return null;
+  const normalized = String(value).trim().replace(',', '.');
+  if (!/^\d+(\.\d+)?$/.test(normalized)) throw new Error(`${fields[key].label}: introduce un número válido.`);
+  const n = Number(normalized);
+  const f = fields[key];
+  if (!Number.isFinite(n) || n < f.min || n > f.max) throw new Error(`${f.label}: revisa el valor y la unidad (rango admitido ${f.min}–${f.max} ${f.unit}).`);
+  return n;
+}
+
+function finding(key, value, protocol, label, level, note = '') {
+  return { key, value, protocol, label, level, note, unit: fields[key].unit };
+}
+
+function classify(labs) {
+  const out = [];
+  for (const key of ['sodium', 'potassium', 'calcium', 'ionized', 'magnesium', 'phosphate']) {
+    const n = labs[key];
+    if (n == null) continue;
+    if (!Number.isFinite(n) || n < fields[key].min || n > fields[key].max) throw new Error(`Valor inválido: ${key}`);
+    if (key === 'sodium') {
+      if (n < 135) out.push(finding(key,n,'hyponatremia', n < 125 ? 'Hiponatremia profunda' : n < 130 ? 'Hiponatremia moderada' : 'Hiponatremia leve',n < 125 ? 'high' : 'moderate','La urgencia depende también de síntomas, tonicidad y duración.'));
+      else if (n > 145) out.push(finding(key,n,'hypernatremia',n > 155 ? 'Hipernatremia grave' : n > 150 ? 'Hipernatremia moderada' : 'Hipernatremia leve',n > 155 ? 'high' : 'moderate'));
+      else out.push(finding(key,n,null,'En intervalo orientativo','normal'));
+    }
+    if (key === 'potassium') {
+      if (n < 3.5) out.push(finding(key,n,'hypokalemia',n <= 2.5 ? 'Hipopotasemia grave' : n < 3 ? 'Hipopotasemia moderada' : 'Hipopotasemia leve', n <= 2.5 ? 'high' : 'moderate'));
+      else if (n >= 5.5) out.push(finding(key,n,'hyperkalemia',n >= 6.5 ? 'Hiperpotasemia grave' : n >= 6 ? 'Hiperpotasemia moderada' : 'Hiperpotasemia leve',n >= 6 ? 'high' : 'moderate'));
+      else if (n > 5) out.push(finding(key,n,'hyperkalemia','Potasio sobre el intervalo','moderate','5.1–5.4: confirmar y evaluar la tendencia; no equivale al umbral UKKA ≥5.5.'));
+      else out.push(finding(key,n,null,'En intervalo orientativo','normal'));
+    }
+    if (key === 'calcium') {
+      const note = 'Calcio total sin ajustar: la albúmina y el pH pueden cambiar su interpretación. Prioriza calcio ionizado en pacientes críticos.';
+      if (n < 8.5) out.push(finding(key,n,'hypocalcemia', n < 7.6 ? 'Calcio total muy bajo' : 'Calcio total bajo', n < 7.6 ? 'high' : 'moderate',note));
+      else if (n > 10.5) out.push(finding(key,n,'hypercalcemia', n > 14 ? 'Hipercalcemia grave' : n >= 12 ? 'Hipercalcemia moderada' : 'Hipercalcemia leve',n > 14 ? 'high' : 'moderate',note));
+      else out.push(finding(key,n,null,'En intervalo orientativo','normal',note));
+    }
+    if (key === 'ionized') {
+      if (n < 1.12) out.push(finding(key,n,'hypocalcemia','Calcio ionizado bajo',n < 0.9 ? 'high' : 'moderate','Confirma el intervalo del laboratorio y el pH; <0.9 requiere valoración urgente.'));
+      else if (n > 1.32) out.push(finding(key,n,'hypercalcemia','Calcio ionizado alto','moderate','La gravedad se integra con síntomas, función renal y evolución.'));
+      else out.push(finding(key,n,null,'En intervalo orientativo','normal'));
+    }
+    if (key === 'magnesium') {
+      if (n < 1.7) out.push(finding(key,n,'hypomagnesemia',n < 1.2 ? 'Hipomagnesemia grave' : 'Hipomagnesemia',n < 1.2 ? 'high' : 'moderate'));
+      else if (n > 2.4) out.push(finding(key,n,'hypermagnesemia','Hipermagnesemia',n >= 6 ? 'high' : 'moderate','La toxicidad depende de la concentración, reflejos, respiración y función renal.'));
+      else out.push(finding(key,n,null,'En intervalo orientativo','normal'));
+    }
+    if (key === 'phosphate') {
+      if (n < 2.5) out.push(finding(key,n,'hypophosphatemia',n < 1 ? 'Hipofosfatemia grave' : n < 2 ? 'Hipofosfatemia moderada' : 'Hipofosfatemia leve',n < 1 ? 'high' : 'moderate'));
+      else if (n > 4.5) out.push(finding(key,n,'hyperphosphatemia','Hiperfosfatemia','moderate','El tratamiento depende de la causa; en enfermedad renal, valorar tendencias de Ca, P y PTH conjuntamente.'));
+      else out.push(finding(key,n,null,'En intervalo orientativo','normal'));
+    }
+  }
+  return out;
+}
+
+function correctedSodium(sodium, glucose) {
+  if (![sodium, glucose].every(Number.isFinite)) return null;
+  const excess = Math.max(0, glucose - 100) / 100;
+  return { low: sodium + 1.6 * excess, high: sodium + 2.4 * excess };
+}
+function calculatedOsmolality(sodium, glucose, bun) {
+  if (![sodium, glucose, bun].every(Number.isFinite)) return null;
+  return 2 * sodium + glucose / 18 + bun / 2.8;
+}
+function effectiveOsmolality(sodium, glucose) {
+  if (![sodium, glucose].every(Number.isFinite)) return null;
+  return 2 * sodium + glucose / 18;
+}
+function waterDeficit(sodium, weight, factor) {
+  if (![sodium, weight, factor].every(Number.isFinite)) return null;
+  if (sodium <= 145 || weight <= 0 || ![0.45,0.5,0.6].includes(factor)) return null;
+  return weight * factor * (sodium / 140 - 1);
+}
+function clinicalAlerts(labs, flags) {
+  const alerts = [];
+  if (flags.neuro) alerts.push({level:'high',text:'Síntomas neurológicos graves: valoración inmediata, ABCDE y tratamiento supervisado. No esperes a completar el formulario.'});
+  if (flags.ecg) alerts.push({level:'high',text:'Cambios en ECG o arritmia: monitorización continua y valoración urgente, incluso con alteraciones analíticas pequeñas.'});
+  if (flags.renal) alerts.push({level:'moderate',text:'Oliguria o eGFR <30: individualiza líquidos y reposiciones; puede requerir nefrología. Las dosis estándar pueden acumularse.'});
+  if (flags.ods && labs.sodium != null && labs.sodium < 135) alerts.push({level:'high',text:'Alto riesgo de desmielinización: objetivo habitual +4–6 mmol/L en 24 h y límite de +8 mmol/L en cualquier período de 24 h; cuenta la reposición de K y vigila la diuresis.'});
+  if (labs.sodium != null && labs.sodium < 135 && labs.glucose > 100) alerts.push({level:'moderate',text:'Hiponatremia con hiperglucemia: revisa sodio corregido y tonicidad antes de diagnosticar hiponatremia hipotónica. El cálculo no sustituye el protocolo de crisis hiperglucémica.'});
+  if (labs.potassium < 3.5 && labs.magnesium < 1.7 && labs.potassium != null && labs.magnesium != null) alerts.push({level:'moderate',text:'Hipopotasemia e hipomagnesemia simultáneas: corregir el déficit de Mg ayuda a evitar una hipopotasemia refractaria.'});
+  if (labs.calcium != null && labs.ionized != null) {
+    const totalDirection = labs.calcium < 8.5 ? -1 : labs.calcium > 10.5 ? 1 : 0;
+    const ionDirection = labs.ionized < 1.12 ? -1 : labs.ionized > 1.32 ? 1 : 0;
+    if (totalDirection !== ionDirection) alerts.push({level:'moderate',text:'Calcio total e ionizado discordantes: revisa albúmina, pH y calidad de la muestra. No indiques reposición solo por el calcio total.'});
+  }
+  return alerts;
+}
+
+
+// Clinical draft. Bibliographic metadata and current applicability require source review.
+const evidenceStatus = {
+  label: 'Borrador clínico · revisión pendiente',
+  detail: 'La consulta web de las fuentes está bloqueada por la red del entorno. Las referencias identificadas incluyen publicaciones de 2023–2024 y documentos anteriores aún usados como fundamento. No se ha confirmado cobertura de cambios de 2025–2026 ni validación institucional.'
+};
+
+const references = [
+  { id:'na2024', year:2024, title:'Treatment Guidelines for Hyponatremia: Stay the Course', authors:'Sterns RH, Rondon-Berrios H, Adrogué HJ, et al.', journal:'Clinical Journal of the American Society of Nephrology', url:'https://pmc.ncbi.nlm.nih.gov/articles/PMC10843202/', scope:'Corrección de Na, riesgo de desmielinización, sobrecorrección y desmopresina.' },
+  { id:'naeu', year:2014, title:'Clinical practice guideline on diagnosis and treatment of hyponatraemia', authors:'Spasovski G, Vanholder R, Allolio B, et al.', journal:'European Journal of Endocrinology', url:'https://doi.org/10.1530/EJE-13-1020', scope:'Clasificación, osmolalidad, sodio urinario y bolos de solución hipertónica.' },
+  { id:'siad2023', year:2023, title:'Syndrome of Inappropriate Antidiuresis: From Pathophysiology to Management', authors:'Warren AM, Grossmann M, Christ-Crain M, Russell N.', journal:'Endocrine Reviews', url:'https://pmc.ncbi.nlm.nih.gov/articles/PMC10502587/', scope:'Diagnóstico de SIAD, restricción hídrica y límites de las opciones de segunda línea.' },
+  { id:'hyperna2023', year:2023, title:'Evaluation and management of hypernatremia in adults: clinical perspectives', authors:'Yun G, Baek SH, Kim S.', journal:'The Korean Journal of Internal Medicine', url:'https://pmc.ncbi.nlm.nih.gov/articles/PMC10175862/', scope:'Déficit de agua, volemia, diabetes insípida y velocidad de corrección.' },
+  { id:'hillier', year:1999, title:'Hyponatremia: evaluating the correction factor for hyperglycemia', authors:'Hillier TA, Abbott RD, Barrett EJ.', journal:'The American Journal of Medicine', url:'https://doi.org/10.1016/S0002-9343(99)00055-8', scope:'Estimación de Na corregido: comparación de factores 1.6 y 2.4. Estudio de fundamento, no guía reciente.' },
+  { id:'ukka2023', year:2023, title:'Clinical Practice Guideline: Management of Hyperkalaemia in Adults', authors:'UK Kidney Association.', journal:'Guía clínica UKKA', url:'https://guidelines.ukkidney.org/hyperkalaemia/', scope:'Clasificación de K elevado, ECG, calcio, insulina/glucosa, eliminación de K y controles.' },
+  { id:'k2023', year:2023, title:'Potassium Disorders: Hypokalemia and Hyperkalemia', authors:'Kim MJ, Valerio C, Knobloch GK.', journal:'American Family Physician', url:'https://www.aafp.org/pubs/afp/issues/2023/0100/potassium-disorders-hypokalemia-hyperkalemia.html', scope:'Diagnóstico de alteraciones de K, reposición oral e IV, ECG y función renal.' },
+  { id:'hypoca2016', year:2016, title:'Emergency management of acute hypocalcaemia in adult patients', authors:'Turner J, Gittoes N, Selby P; Society for Endocrinology.', journal:'Endocrine Connections', url:'https://doi.org/10.1530/EC-16-0056', scope:'Hipocalcemia grave, calcio IV, monitorización y corrección de Mg.' },
+  { id:'hyperca2016', year:2016, title:'Emergency management of acute hypercalcaemia in adult patients', authors:'Walsh J, Gittoes N, Selby P; Society for Endocrinology.', journal:'Endocrine Connections', url:'https://doi.org/10.1530/EC-16-0055', scope:'Gravedad, hidratación y tratamiento de la hipercalcemia aguda.' },
+  { id:'cancer2023', year:2023, title:'Treatment of Hypercalcemia of Malignancy in Adults: An Endocrine Society Clinical Practice Guideline', authors:'El-Hajj Fuleihan G, Clines GA, Hu MI, et al.', journal:'The Journal of Clinical Endocrinology & Metabolism', url:'https://doi.org/10.1210/clinem/dgac621', scope:'Hipercalcemia por malignidad: antirresortivos, calcitonina y consideraciones renales. No extrapolar a todas las causas.' },
+  { id:'mg2024', year:2024, title:'Treating acute hypomagnesaemia in adults', authors:'NHS Specialist Pharmacy Service.', journal:'Recurso profesional NHS SPS; fecha/versión por cotejar', url:'https://www.sps.nhs.uk/articles/treating-acute-hypomagnesaemia-in-adults/', scope:'Reposición de magnesio oral e IV, dosis de referencia y precaución renal.' },
+  { id:'hypermg2023', year:2023, title:'Hypermagnesemia in Clinical Practice', authors:'Aal-Hamad AH, Al-Alawi AM, Kashoub MS, Falhammar H.', journal:'Medicina', url:'https://pmc.ncbi.nlm.nih.gov/articles/PMC10384947/', scope:'Causas, toxicidad clínica, calcio IV y eliminación renal o diálisis.' },
+  { id:'phos2012', year:2012, title:'Approach to the Hypophosphatemic Patient', authors:'Imel EA, Econs MJ.', journal:'The Journal of Clinical Endocrinology & Metabolism', url:'https://doi.org/10.1210/jc.2011-1319', scope:'Pérdida renal, redistribución, reposición oral/IV y riesgos. Documento de fundamento pendiente de actualización.' },
+  { id:'aspen2020', year:2020, title:'ASPEN Consensus Recommendations for Refeeding Syndrome', authors:'da Silva JSV, Seres DS, Sabino K, et al.', journal:'Nutrition in Clinical Practice', url:'https://doi.org/10.1002/ncp.10474', scope:'Riesgo de realimentación, tiamina, vigilancia de P/K/Mg y avance nutricional.' },
+  { id:'kdigo2017', year:2017, title:'KDIGO 2017 Clinical Practice Guideline Update for CKD–MBD', authors:'KDIGO CKD–MBD Update Work Group.', journal:'Kidney International Supplements', url:'https://kdigo.org/wp-content/uploads/2017/02/2017-KDIGO-CKD-MBD-GL-Update.pdf', scope:'Hiperfosfatemia en enfermedad renal crónica: tendencias, dieta, quelantes y Ca/P/PTH.' }
+];
+
+const step = (title, items, rationale, refs) => ({title, items, rationale, refs});
+const protocols = [
+  {
+    id:'hyponatremia', family:'Sodio', symbol:'Na', name:'Hiponatremia', summary:'Confirmar tonicidad, evaluar síntomas y controlar la corrección.', range:'Na <135 mmol/L', urgency:'Convulsiones, coma o compromiso cardiorrespiratorio requieren tratamiento inmediato en área monitorizada.', refs:['na2024','naeu','siad2023','hillier'],
+    classification:[['Leve','130–134 mmol/L'],['Moderada','125–129 mmol/L'],['Profunda','<125 mmol/L'],['Duración','Aguda <48 h documentadas; crónica ≥48 h. Si se desconoce, usar límites de corrección de la crónica.']],
+    steps:[
+      step('Confirmar y caracterizar',[
+        'Valorar ABCDE, Glasgow, convulsiones, cefalea, vómitos y signos de herniación. Los síntomas graves prevalecen sobre el número de Na.',
+        'Repetir Na si es inesperado. Medir osmolalidad sérica, glucosa, K, creatinina y urea. Osmolalidad medida <275 mOsm/kg respalda hiponatremia hipotónica; la tonicidad efectiva excluye urea.',
+        'En hiperglucemia, revisar Na corregido. Considerar pseudohiponatremia con hipertrigliceridemia/hiperproteinemia y medición por electrodo indirecto; confirmar con método directo cuando proceda.'
+      ],'La solución hipertónica no es el tratamiento de toda natremia baja; primero hay que reconocer la tonicidad, excepto cuando la emergencia exige actuación simultánea.',['naeu','hillier','siad2023']),
+      step('Investigar la causa',[
+        'Obtener osmolalidad y Na urinarios, preferentemente antes de líquidos si no retrasa la emergencia. Osm urinaria ≤100 mOsm/kg orienta a exceso de agua o baja ingesta de solutos.',
+        'Con Osm urinaria >100: Na urinario ≤30 mmol/L sugiere volumen arterial efectivo bajo; >30 obliga a integrar diuréticos, función renal, insuficiencia suprarrenal y SIAD. El examen de volemia aislado tiene limitaciones.',
+        'Revisar tiazidas, antidepresivos, anticonvulsivos y desmopresina; valorar cortisol y función tiroidea según contexto. SIAD es diagnóstico de exclusión.'
+      ],'La orina ayuda a identificar actividad antidiurética y pérdidas de sal; diuréticos y enfermedad renal pueden invalidar umbrales aislados.',['naeu','siad2023']),
+      step('Elegir el manejo por escenario',[
+        'Síntomas graves compatibles con hiponatremia hipotónica: en área monitorizada, una pauta europea es NaCl 3% 150 mL IV en 20 min; medir Na al terminar y considerar repetir hasta dos veces según síntomas y respuesta. Objetivo inicial aproximado +4–6 mmol/L, no normalizar el Na. Usar una sola pauta institucional; existen pautas de 100 mL.',
+        'Sin síntomas graves: tratar la causa. Hipovolemia: solución isotónica y vigilancia de acuariuresis. SIAD: retirar desencadenantes y restricción de líquidos individualizada; evitar suero isotónico indiscriminado, que puede empeorar el Na.',
+        'Hipervolemia: abordar insuficiencia cardiaca/cirrosis y balance de líquidos. Urea, vaptanes o desmopresina requieren selección y supervisión especializada; no son opciones automáticas.'
+      ],'Una subida inicial pequeña suele aliviar el edema cerebral; la corrección excesiva posterior aumenta el riesgo de desmielinización.',['naeu','na2024','siad2023']),
+      step('Vigilar y prevenir sobrecorrección',[
+        'Na tras cada bolo; durante corrección activa, habitualmente cada 2–4 h y antes si hay diuresis brusca. Medir diuresis y balance, y contabilizar toda reposición de K.',
+        'Límite europeo general: ≤10 mmol/L en las primeras 24 h y ≤8 mmol/L por cada 24 h posterior. En alto riesgo, objetivo +4–6 y máximo +8 mmol/L en cualquier 24 h; son límites, no metas a alcanzar.',
+        'Alto riesgo: Na ≤105, hipopotasemia, desnutrición, uso intenso de alcohol o hepatopatía avanzada. Si se prevé o aparece sobrecorrección: suspender medidas correctoras, pedir apoyo experto y valorar desmopresina/agua libre IV con vigilancia estrecha.'
+      ],'La recuperación de excreción de agua puede elevar el Na más que el líquido administrado. El seguimiento seriado controla ese riesgo.',['na2024','naeu'])
+    ], pitfalls:['No asumir SIAD por apariencia de euvolemia.','El déficit de K y su reposición modifican el Na.','No corregir una duración desconocida como si fuera aguda.']
+  },
+  {
+    id:'hypernatremia', family:'Sodio', symbol:'Na', name:'Hipernatremia', summary:'Recuperar perfusión y reponer agua con vigilancia de pérdidas.', range:'Na >145 mmol/L', urgency:'Shock, alteración neurológica marcada o Na >155 mmol/L requieren valoración y vigilancia urgentes.', refs:['hyperna2023'],
+    classification:[['Leve','146–150 mmol/L'],['Moderada','151–155 mmol/L'],['Grave','>155 mmol/L'],['Duración','Aguda <48 h documentadas; crónica o desconocida con corrección gradual.']],
+    steps:[
+      step('Determinar volumen y mecanismo',[
+        'Evaluar estado neurológico, perfusión, volemia y acceso al agua. Revisar balance, fiebre, diarrea, nutrición, diuréticos, litio y aporte de sodio.',
+        'Medir glucosa, K, función renal, osmolalidad y volumen urinarios. Poliuria con orina inadecuadamente diluida orienta a diabetes insípida; glucosuria o alta carga de solutos orientan a diuresis osmótica.'
+      ],'Suele representar déficit relativo de agua, pero el líquido inicial depende de la circulación y el mecanismo de pérdida.',['hyperna2023']),
+      step('Restaurar perfusión antes del agua libre',[
+        'Si hay shock o hipotensión: cristaloide isotónico, con reevaluación clínica, independientemente del Na. No usar agua libre como expansor inicial.',
+        'Estable: agua oral/enteral si es segura, glucosa 5% IV o solución hipotónica según volemia y déficits concomitantes. En sobrecarga de volumen, valorar agua libre y diurético con supervisión.',
+        'Estimar déficit de agua con ACT × (Na/140 − 1). Añadir pérdidas continuas e insensibles y restar aportes; la fórmula sola no define la prescripción.'
+      ],'Una fórmula no predice bien cambios en pérdidas o función renal. El déficit total tampoco equivale al volumen que debe darse en el primer día.',['hyperna2023']),
+      step('Individualizar velocidad y causa',[
+        'En duración crónica/desconocida, una pauta conservadora limita la caída a aproximadamente ≤0.5 mmol/L/h y ≤10–12 mmol/L/día; repartir el déficit, habitualmente en 48–72 h, según evolución.',
+        'La evidencia adulta sobre estos límites es observacional; evitar corrección excesivamente lenta. Una carga aguda de sodio puede requerir corrección más rápida bajo supervisión experta.',
+        'Tratar pérdidas gastrointestinales/renales, hiperglucemia e hipopotasemia. Sospecha de diabetes insípida: estudio y desmopresina solo tras valorar el mecanismo; vigilar hiponatremia.'
+      ],'El tiempo de instauración cambia la adaptación cerebral; los objetivos requieren controles y ajuste, no una velocidad fija mantenida.',['hyperna2023']),
+      step('Reevaluar la respuesta',[
+        'Control de Na, glucosa y balance cada 2–4 h al inicio de corrección activa o en pacientes inestables; ampliar cuando la tendencia sea predecible.',
+        'Ajustar la pauta a la caída real del Na, diuresis y tolerancia cardiopulmonar. Consultar nefrología si la función renal o sobrecarga impide corregir con seguridad.'
+      ],'La medición seriada del Na sustituye las predicciones cuando cambia la pérdida de agua.',['hyperna2023'])
+    ], pitfalls:['No confundir BUN con urea total en el cálculo.','No interpretar el déficit de agua como orden de infusión.','No aplicar una pauta rápida de carga aguda a duración desconocida.']
+  },
+  {
+    id:'hypokalemia', family:'Potasio', symbol:'K', name:'Hipopotasemia', summary:'Identificar riesgo eléctrico, reponer potasio y corregir magnesio.', range:'K <3.5 mmol/L', urgency:'K ≤2.5 mmol/L, arritmia, cambios de ECG, debilidad intensa o compromiso respiratorio son criterios de atención urgente.', refs:['k2023','mg2024'],
+    classification:[['Leve','3.0–3.4 mmol/L'],['Moderada','>2.5 y <3.0 mmol/L'],['Grave','≤2.5 mmol/L o manifestaciones graves']],
+    steps:[
+      step('Valorar el riesgo y confirmar',[
+        'ECG, síntomas neuromusculares, función renal, Mg, glucosa y equilibrio ácido-base. Un ECG normal no excluye riesgo de arritmia.',
+        'Revisar pérdidas digestivas, diuréticos, insulina, betaagonistas y baja ingesta. Si la causa no es clara, valorar K urinario y contexto ácido-base; la medición urinaria puede alterarse por reposición.'
+      ],'El mecanismo puede ser pérdida corporal o redistribución; la cantidad de reposición y el riesgo de rebote difieren.',['k2023']),
+      step('Seleccionar la vía',[
+        'Paciente estable, K >2.5 y vía digestiva funcional: preferir KCl oral en dosis divididas. Una pauta de referencia es 20–40 mEq por dosis, ajustada a déficit, tolerancia, función renal y presentación.',
+        'Grave, ECG alterado, síntomas importantes o imposibilidad oral: KCl IV diluido mediante bomba y monitorización. Nunca administrar KCl concentrado en bolo.',
+        'Velocidades de referencia: hasta 10 mEq/h por vía periférica; hasta 20 mEq/h por vía central con ECG continuo y controles frecuentes. Verificar concentración máxima y normativa local; velocidades superiores son de cuidados críticos.'
+      ],'La vía oral reduce el riesgo de elevación brusca y rebote. La infusión IV rápida puede causar arritmias fatales.',['k2023']),
+      step('Tratar la causa y el déficit concomitante',[
+        'Corregir hipomagnesemia concomitante; revisar y tratar pérdidas persistentes. Evitar soluciones glucosadas como vehículo inicial habitual cuando la insulina endógena pueda agravar la hipopotasemia.',
+        'En oliguria o enfermedad renal avanzada, reducir e individualizar la reposición. No calcular una dosis total únicamente a partir del K sérico.'
+      ],'El Mg bajo favorece la pérdida renal de K, mientras la insuficiencia renal aumenta el riesgo de sobrecorrección.',['k2023','mg2024']),
+      step('Controlar la corrección',[
+        'En corrección urgente IV: K aproximadamente cada 2–4 h, ECG continuo, Mg y función renal. Evitar muestras de la misma vía por la que se infunde K.',
+        'En manejo oral estable: programar el control según gravedad, función renal y pérdidas. Reajustar antes de repetir dosis; revisar cardiopatía y fármacos que aumentan riesgo eléctrico.'
+      ],'La respuesta depende de las pérdidas y redistribución; un control oportuno evita infra y sobrecorrección.',['k2023'])
+    ], pitfalls:['Nunca KCl IV directo.','No olvidar Mg en hipopotasemia refractaria.','No asumir que un ECG normal elimina el riesgo.']
+  },
+  {
+    id:'hyperkalemia', family:'Potasio', symbol:'K', name:'Hiperpotasemia', summary:'Proteger el corazón, redistribuir K y eliminarlo del organismo.', range:'K ≥5.5 mmol/L (UKKA)', urgency:'K ≥6.5 mmol/L, arritmia o ECG compatible requieren actuación inmediata; K 6.0–6.4 necesita evaluación urgente.', refs:['ukka2023','k2023'],
+    classification:[['Leve','5.5–5.9 mmol/L'],['Moderada','6.0–6.4 mmol/L'],['Grave','≥6.5 mmol/L'],['ECG','Un ECG normal no excluye hiperpotasemia peligrosa.']],
+    steps:[
+      step('Reconocer y confirmar sin demorar',[
+        'ECG de 12 derivaciones si K ≥6.0; monitorización continua si K ≥6.5, ECG alterado o paciente clínicamente enfermo con K 6.0–6.4.',
+        'Comprobar hemólisis, técnica de toma, plaquetas/leucocitos y repetir muestra si se sospecha pseudohiperpotasemia. No retrasar tratamiento si hay gravedad clínica/eléctrica.',
+        'Medir glucosa, función renal y gasometría según contexto; revisar suplementos de K, RAAS, antagonistas de mineralocorticoides, trimetoprim y AINE.'
+      ],'La confirmación evita tratar un artefacto, pero el riesgo eléctrico puede exigir tratamiento antes de la repetición.',['ukka2023','k2023']),
+      step('Proteger el miocardio si hay cambios en ECG',[
+        'Calcio IV según entorno y presentación. UKKA contempla gluconato cálcico 10% 30 mL en 10 min; en reanimación/periparo, cloruro cálcico 10% 10 mL en 5 min. Dosis equivalentes de calcio elemental; no son volúmenes intercambiables.',
+        'Reevaluar ECG a los 5–10 min y repetir según persistencia de cambios y protocolo de reanimación. El cloruro requiere especial cuidado por daño por extravasación.',
+        'El calcio estabiliza la membrana, pero no disminuye el K. Continuar redistribución y eliminación simultáneamente.'
+      ],'La protección eléctrica actúa rápido y dura menos que la amenaza metabólica; no sustituye la eliminación de potasio.',['ukka2023']),
+      step('Redistribuir y eliminar',[
+        'K ≥6.5: insulina soluble/regular 10 U IV con 25 g de glucosa según pauta UKKA; considerar también en K 6.0–6.4. Verificar glucemia, acceso y protocolo local. Si glucosa basal <126 mg/dL (7 mmol/L), UKKA propone glucosa 10% 50 mL/h durante 5 h después del tratamiento para reducir hipoglucemia.',
+        'Salbutamol nebulizado 10–20 mg como coadyuvante, no como monoterapia en hiperpotasemia grave. No usar bicarbonato IV rutinario; valorar indicaciones específicas de acidosis.',
+        'Retirar fuentes de K y desencadenantes. Valorar diurético si hay función renal/volemia adecuadas, quelante de K según disponibilidad y guía, y diálisis urgente si es refractaria, con insuficiencia renal grave u otras indicaciones. Los quelantes no sustituyen medidas de emergencia.'
+      ],'La redistribución es transitoria y puede haber rebote; se necesita una vía efectiva de eliminación.',['ukka2023']),
+      step('Vigilar K y glucosa',[
+        'K tras tratamiento aproximadamente a 1, 2, 4, 6 y 24 h, ajustando a gravedad y respuesta. ECG continuo cuando está indicado.',
+        'Tras insulina/glucosa: glucemia basal y a 30, 60, 90, 120, 180, 240, 300 y 360 min; prolongar si hay riesgo o dosis repetidas. No repetir insulina sin integrar K y glucosa.',
+        'Escalar a cuidados críticos/nefrología si persisten alteraciones de ECG, K grave o rebote sin eliminación efectiva.'
+      ],'La hipoglucemia puede ser tardía, sobre todo en enfermedad renal; el rebote de K aparece al terminar el efecto redistributivo.',['ukka2023'])
+    ], pitfalls:['Calcio no elimina K.','No usar salbutamol como único tratamiento de un caso grave.','No omitir seis horas de vigilancia glucémica tras insulina.']
+  },
+  {
+    id:'hypocalcemia', family:'Calcio', symbol:'Ca', name:'Hipocalcemia', summary:'Confirmar calcio biológicamente activo y buscar el mecanismo.', range:'Ca total <8.5 mg/dL o ionizado bajo', urgency:'Tetania, convulsiones, laringoespasmo, QT prolongado/arritmia o Ca ajustado <1.9 mmol/L (~7.6 mg/dL) requieren valoración urgente.', refs:['hypoca2016','mg2024'],
+    classification:[['Intervalo','Usar el intervalo local y Ca ionizado cuando sea pertinente.'],['Grave','Síntomas graves o Ca ajustado <1.9 mmol/L; un Ca total bajo sin albúmina no confirma este criterio.']],
+    steps:[
+      step('Confirmar e identificar la causa',[
+        'Medir Ca ionizado en pacientes críticos, con hipoalbuminemia o trastorno ácido-base. Medir Mg, P, creatinina, albúmina, PTH y 25-OH vitamina D según contexto.',
+        'ECG y revisión de cirugía cervical, pancreatitis, sepsis, transfusión, antirresortivos y déficit de vitamina D. Interpretar PTH con el Ca simultáneo.',
+        'No automatizar fórmulas de calcio ajustado por albúmina en pacientes críticos; pueden clasificar erróneamente el calcio activo.'
+      ],'La fracción ionizada produce el efecto fisiológico, y un Mg bajo puede comprometer secreción/acción de PTH.',['hypoca2016','mg2024']),
+      step('Tratar la emergencia bajo monitorización',[
+        'En hipocalcemia grave confirmada o sintomática: gluconato cálcico 10% 10–20 mL diluidos en 50–100 mL de glucosa 5%, en 10 min con ECG. Repetir según síntomas y Ca, seguido de infusión titulada si es necesario.',
+        'Comprobar presentación y calcio elemental. Cloruro cálcico es una alternativa de mayor riesgo de extravasación, generalmente mediante vía central; no sustituir volumen por volumen.',
+        'No compartir vía con fosfato o bicarbonato por riesgo de precipitación. En diálisis/enfermedad renal avanzada, individualizar con nefrología.'
+      ],'El calcio IV controla manifestaciones inmediatas; su efecto puede ser corto si no se corrige la causa.',['hypoca2016']),
+      step('Corregir el mecanismo',[
+        'Leve y estable: calcio oral y tratamiento del déficit de vitamina D según etiología y función renal.',
+        'Corregir Mg bajo. Hipoparatiroidismo u otras indicaciones de vitamina D activa: valorar calcitriol/alfacalcidol con seguimiento especializado, evitando hipercalcemia e hipercalciuria.'
+      ],'Reponer calcio sin tratar Mg, vitamina D o PTH puede no sostener la respuesta.',['hypoca2016','mg2024']),
+      step('Monitorizar',[
+        'En tratamiento IV, controles frecuentes de Ca ionizado/total según contexto, ECG, síntomas y vía. Ajustar la infusión a resultados y protocolo institucional.',
+        'Al pasar a oral, planificar Ca, P, Mg y función renal; tras vitamina D activa vigilar también hipercalcemia.'
+      ],'El balance de calcio y fosfato cambia con la causa y su tratamiento; la misma dosis no es segura en todas las funciones renales.',['hypoca2016'])
+    ], pitfalls:['No reponer por calcio total aislado sin interpretar albúmina/pH.','No mezclar calcio IV con fosfato o bicarbonato.','Hipocalcemia refractaria obliga a revisar Mg.']
+  },
+  {
+    id:'hypercalcemia', family:'Calcio', symbol:'Ca', name:'Hipercalcemia', summary:'Evaluar gravedad, recuperar volumen y tratar la causa.', range:'Ca total >10.5 mg/dL o ionizado alto', urgency:'Ca >14 mg/dL (~3.5 mmol/L), confusión, arritmia o lesión renal aguda requieren tratamiento urgente.', refs:['hyperca2016','cancer2023'],
+    classification:[['Leve','>10.5 y <12 mg/dL'],['Moderada','12–14 mg/dL'],['Grave','>14 mg/dL o repercusión clínica importante']],
+    steps:[
+      step('Confirmar y estudiar',[
+        'Confirmar calcio, preferiblemente ionizado si albúmina/pH alterados; ECG, función renal, P, Mg y volemia. Revisar tiazidas, litio, calcio y vitamina D.',
+        'PTH simultánea: elevada/inapropiadamente normal orienta a mecanismo dependiente de PTH. Suprimida: estudiar malignidad, exceso de vitamina D y otras causas según contexto.',
+        'No extrapolar la guía de malignidad a hipercalcemia por hiperparatiroidismo sin evaluar la causa.'
+      ],'PTH organiza el estudio etiológico; la causa determina el tratamiento definitivo.',['hyperca2016','cancer2023']),
+      step('Hidratar de forma individualizada',[
+        'En déficit de volumen: solución salina isotónica, titulada a perfusión, diuresis y tolerancia. Reducir ritmo y vigilar sobrecarga en insuficiencia cardiaca o renal.',
+        'No usar un volumen fijo para todos los pacientes. Los diuréticos de asa no se recomiendan rutinariamente para bajar Ca; pueden usarse si aparece sobrecarga.'
+      ],'La hipercalcemia causa pérdida de agua y reduce filtrado; restaurar volumen mejora la eliminación renal de calcio.',['hyperca2016','cancer2023']),
+      step('Aplicar tratamiento dirigido',[
+        'Hipercalcemia por malignidad: antirresortivo IV (bisfosfonato) o denosumab según función renal y contexto. La guía sugiere denosumab sobre bisfosfonato IV, con evidencia de certeza baja; valorar disponibilidad y riesgo de hipocalcemia.',
+        'Malignidad con hipercalcemia grave: añadir calcitonina como puente junto al antirresortivo; limitar a 48–72 h por taquifilaxia. No esperar un efecto inmediato del bisfosfonato.',
+        'Exceso de calcitriol: valorar glucocorticoide según causa. Hiperparatiroidismo: tratamiento especializado. Refractaria con limitaciones de líquidos o insuficiencia renal grave: valorar diálisis.'
+      ],'Los antirresortivos tardan en actuar; calcitonina proporciona un efecto más rápido y transitorio. La causa condiciona la selección.',['cancer2023','hyperca2016']),
+      step('Vigilar resolución y toxicidad',[
+        'Control seriado de Ca, P, Mg, función renal, diuresis y sobrecarga. Durante gravedad/inestabilidad, aumentar frecuencia respecto al control diario.',
+        'Tras antirresortivos vigilar hipocalcemia, especialmente con enfermedad renal o déficit de vitamina D; seguir respuesta durante los días posteriores.'
+      ],'La respuesta puede retrasarse y los antirresortivos pueden producir hipocalcemia duradera.',['cancer2023'])
+    ], pitfalls:['No usar furosemida rutinaria sin corregir volemia.','Denosumab puede causar hipocalcemia importante en enfermedad renal.','Una PTH normal puede ser inapropiadamente alta en hipercalcemia.']
+  },
+  {
+    id:'hypomagnesemia', family:'Magnesio', symbol:'Mg', name:'Hipomagnesemia', summary:'Relacionar Mg con el riesgo eléctrico y los déficits de K y Ca.', range:'Mg <1.7 mg/dL (~0.7 mmol/L)', urgency:'Arritmia, convulsiones, tetania o Mg <1.2 mg/dL (~0.5 mmol/L) requieren valoración urgente.', refs:['mg2024','k2023','hypoca2016'],
+    classification:[['Leve/moderada','1.2 a <1.7 mg/dL; confirmar intervalo local.'],['Grave','<1.2 mg/dL o síntomas importantes.'],['Conversión','1 mmol de Mg ≈24.3 mg de Mg elemental; no equivale a gramos de MgSO₄.']],
+    steps:[
+      step('Evaluar déficit y contexto',[
+        'ECG si síntomas/gravedad; medir K, Ca, función renal y buscar diarrea, alcohol, desnutrición, diuréticos, inhibidores de bomba de protones y pérdidas renales.',
+        'Un Mg sérico normal no descarta por completo déficit corporal. Si persiste sin causa clara, investigar excreción renal con apoyo especializado.'
+      ],'Mg bajo favorece arritmias e impide una corrección eficaz de K y Ca.',['mg2024','k2023','hypoca2016']),
+      step('Seleccionar reposición',[
+        'Leve, estable y vía oral disponible: sales de Mg por vía oral en dosis divididas, según Mg elemental de la presentación y tolerancia digestiva.',
+        'Grave o sintomática: MgSO₄ IV en hospital. NHS SPS describe como dosis inicial de referencia 5 g (aproximadamente 20 mmol de Mg), con velocidad habitual 1–2 g/h; requiere ajuste a función renal y protocolo local, y no es la pauta de bolo de una arritmia.',
+        'Torsades de pointes es una emergencia con pauta específica de reanimación; activar el protocolo de arritmia y no esperar a una reposición lenta de déficit.'
+      ],'La vía y velocidad dependen de los síntomas y función renal. Confundir Mg elemental con MgSO₄ puede producir errores de dosis.',['mg2024']),
+      step('Tratar pérdidas y ajustar por función renal',[
+        'Revisar fármacos causales y pérdidas digestivas. Reponer K y Ca cuando corresponda.',
+        'Oliguria, lesión renal aguda o eGFR <30: reducción/individualización con especialista y controles cercanos; riesgo de acumulación y depresión neuromuscular.'
+      ],'La excreción renal determina seguridad, mientras el déficit intracelular puede requerir reposición sostenida.',['mg2024']),
+      step('Vigilar respuesta',[
+        'Durante IV: presión arterial, respiración, ECG si riesgo y síntomas; valorar reflejos con dosis altas o disfunción renal.',
+        'Control de Mg después de la infusión y controles seriados de K, Ca y función renal; no tomar la muestra de la vía de infusión. Continuar según pérdidas y respuesta.'
+      ],'La subida sérica temprana no garantiza reposición tisular y el exceso de Mg puede ser tóxico.',['mg2024'])
+    ], pitfalls:['La fecha/versión de la fuente NHS SPS está pendiente de cotejo.','No confundir gramos de sal con Mg elemental.','La pauta para torsades no es la pauta de reposición habitual.']
+  },
+  {
+    id:'hypermagnesemia', family:'Magnesio', symbol:'Mg', name:'Hipermagnesemia', summary:'Suspender aporte, identificar toxicidad y facilitar eliminación.', range:'Mg >2.4 mg/dL (intervalo orientativo)', urgency:'Hipotensión, bradicardia, arreflexia, depresión respiratoria o alteración de conciencia requieren intervención urgente.', refs:['hypermg2023'],
+    classification:[['Leve','Por encima del intervalo, sin manifestaciones; integrar función renal.'],['Toxicidad','No existe un único umbral seguro: valorar ECG, reflejos, respiración y tendencia.'],['Alerta analítica','Mg ≥6 mg/dL activa valoración prioritaria en esta herramienta; no es una escala universal.']],
+    steps:[
+      step('Detectar exposición y repercusión',[
+        'Revisar función renal, laxantes/antiácidos con Mg, suplementos y perfusiones de MgSO₄. Evaluar respiración, presión arterial, ECG, conciencia y reflejos.',
+        'Medir Ca, K, Mg y función renal. Confirmar resultados inesperados sin retrasar actuación si hay toxicidad.'
+      ],'La eliminación renal limitada y los aportes exógenos pueden producir acumulación incluso sin una dosis reciente aparentemente alta.',['hypermg2023']),
+      step('Suspender aporte y estabilizar',[
+        'Retirar fuentes de Mg. Toxicidad cardiovascular/neuromuscular: soporte ABCDE y monitorización.',
+        'El calcio IV puede antagonizar efectos del Mg: una pauta de referencia es gluconato cálcico 10% 10 mL IV en unos 10 min, con ECG y valoración de repetición. Verificar presentación y protocolo local.'
+      ],'El calcio antagoniza efectos fisiológicos del Mg, pero no elimina su exceso.',['hypermg2023']),
+      step('Favorecer eliminación según función renal',[
+        'En paciente con filtrado y diuresis adecuados: valorar solución isotónica y diurético de asa, evitando sobrecarga y pérdidas de otros electrolitos.',
+        'Toxicidad grave, insuficiencia renal o respuesta insuficiente: valoración urgente de hemodiálisis por nefrología.'
+      ],'La depuración extracorpórea puede ser necesaria cuando la eliminación renal no basta.',['hypermg2023']),
+      step('Comprobar reversión',[
+        'Reevaluar respiración, reflejos, ECG y presión, además de Mg, Ca y función renal seriados.',
+        'Vigilar persistencia/rebote y corregir el mecanismo de exposición antes de retirar la monitorización.'
+      ],'La mejoría clínica y la tendencia analítica deben ser concordantes; una medición aislada no demuestra eliminación sostenida.',['hypermg2023'])
+    ], pitfalls:['Un antídoto funcional no elimina Mg.','No forzar diuresis en oliguria.','Laxantes y antiácidos pueden ser la fuente.']
+  },
+  {
+    id:'hypophosphatemia', family:'Fósforo', symbol:'P', name:'Hipofosfatemia', summary:'Distinguir redistribución, déficit y pérdida renal; revisar realimentación.', range:'P <2.5 mg/dL', urgency:'P <1 mg/dL, debilidad respiratoria, rabdomiólisis, hemólisis o disfunción cardiaca requieren valoración urgente.', refs:['phos2012','aspen2020'],
+    classification:[['Leve','2.0 a <2.5 mg/dL'],['Moderada','1.0 a <2.0 mg/dL'],['Grave','<1.0 mg/dL (~0.32 mmol/L)']],
+    steps:[
+      step('Identificar mecanismo y riesgo',[
+        'Revisar alimentación reciente, alcohol, desnutrición, insulina, alcalosis respiratoria, antiácidos, función renal y pérdidas digestivas.',
+        'Medir K, Mg, Ca y función renal; valorar fuerza/respiración y CK si síntomas. En pérdida renal persistente, estudiar fosfaturia con especialista.'
+      ],'La redistribución puede cambiar rápidamente; en realimentación suelen coexistir déficits de K y Mg.',['phos2012','aspen2020']),
+      step('Elegir reposición por gravedad',[
+        'Estable y vía digestiva funcional: fosfato oral en dosis divididas, titulado a concentración, tolerancia y función renal.',
+        'Grave, sintomática o sin vía oral: considerar fosfato IV monitorizado, individualizado al peso y función renal. Verificar si la preparación aporta sodio o potasio y la concentración de mmol/mL.',
+        'No hay una dosis IV universal segura. Usar una pauta institucional validada por farmacia; evitar reposición IV indiscriminada si hay hipocalcemia significativa y ajustar en enfermedad renal.'
+      ],'El fosfato IV puede causar hipocalcemia, hipotensión, sobrecarga de K/Na y precipitación de calcio-fosfato.',['phos2012']),
+      step('Abordar posible realimentación',[
+        'Identificar riesgo antes de aumentar calorías. ASPEN recomienda tiamina 100 mg antes de alimentación o soluciones con dextrosa en pacientes de riesgo; continuar según riesgo y cuadro clínico. No retrasar dextrosa en hipoglucemia urgente.',
+        'Si hay déficits graves de P/K/Mg, corregir y reconsiderar inicio/aumento de aporte calórico; avanzar de forma controlada con nutrición clínica.',
+        'En alto riesgo, vigilar P/K/Mg aproximadamente cada 12 h durante los primeros 3 días, con mayor frecuencia si es clínicamente necesario.'
+      ],'La insulina de la realimentación desplaza electrolitos al interior celular y aumenta la necesidad de tiamina.',['aspen2020']),
+      step('Monitorizar reposición',[
+        'Durante reposición IV controlar P, Ca, K, Mg y función renal antes de repetir dosis; frecuencia según pauta, habitualmente cada 6 h en regímenes IV publicados.',
+        'Vigilar respiración, hemodinamia y balance; tratar la causa y reevaluar antes de continuar reposición.'
+      ],'La combinación de electrolitos y función renal condiciona tanto respuesta como toxicidad.',['phos2012'])
+    ], pitfalls:['La fuente de reposición de 2012 requiere actualización antes de adopción institucional.','El fosfato potásico también aporta K.','No omitir el riesgo de realimentación.']
+  },
+  {
+    id:'hyperphosphatemia', family:'Fósforo', symbol:'P', name:'Hiperfosfatemia', summary:'Evaluar función renal, liberación celular y repercusión sobre calcio.', range:'P >4.5 mg/dL', urgency:'Hiperfosfatemia aguda con lesión renal, hipocalcemia sintomática o sospecha de lisis tumoral requiere evaluación urgente.', refs:['kdigo2017','phos2012'],
+    classification:[['Elevado','>4.5 mg/dL, según intervalo local.'],['Gravedad','No se determina por una escala única de P; integrar Ca, síntomas, causa, función renal y velocidad de ascenso.']],
+    steps:[
+      step('Confirmar y buscar mecanismo',[
+        'Repetir si el resultado es inesperado; revisar hemólisis y posibles interferencias analíticas. Medir Ca, K, creatinina y, si corresponde, ácido úrico/LDH.',
+        'Investigar enfermedad renal, lisis tumoral, rabdomiólisis, acidosis, enemas/suplementos de fosfato e hipoparatiroidismo.'
+      ],'Un aumento agudo por liberación celular requiere un abordaje distinto al de CKD–MBD crónica.',['phos2012','kdigo2017']),
+      step('Actuar en cuadros agudos',[
+        'Suspender aporte exógeno y tratar la causa. Sospecha de lisis tumoral o rabdomiólisis: activar el protocolo correspondiente y consultar nefrología.',
+        'Hidratación solo si está indicada por volemia y causa, con vigilancia de sobrecarga. Valorar diálisis en lesión renal grave/refractariedad y otras indicaciones.',
+        'Evitar calcio IV por hipocalcemia asintomática asociada a gran carga de fosfato; puede favorecer precipitación. Si hay tetania, convulsiones o arritmia por hipocalcemia, el rescate con calcio requiere evaluación experta urgente.'
+      ],'La caída de calcio puede acompañar una carga de fosfato; tratar solo el número de calcio puede empeorar depósitos.',['phos2012']),
+      step('Manejo crónico en enfermedad renal',[
+        'KDIGO: basar decisiones en tendencias conjuntas de Ca, P y PTH, y en elevación progresiva/persistente de fosfato.',
+        'Individualizar ingesta de fosfato, especialmente aditivos, sin inducir desnutrición. Quelantes con comidas si están indicados; restringir carga de quelantes cálcicos según contexto.',
+        'Revisar adherencia, nutrición y diálisis con nefrología. No indicar quelantes preventivos por una sola medición normal o limítrofe.'
+      ],'En CKD–MBD la estrategia integra balance mineral y riesgo de carga de calcio, no una medición aislada.',['kdigo2017']),
+      step('Seguir tendencia y complicaciones',[
+        'Agudo: controles estrechos de P, Ca, K y función renal según estabilidad. Crónico: intervalos según estadio de enfermedad renal y tratamiento.',
+        'Documentar causa, respuesta y plan de seguimiento; evitar extrapolar recomendaciones de CKD–MBD al paciente sin enfermedad renal.'
+      ],'El seguimiento distingue una elevación transitoria de una carga persistente y guía la intensidad de tratamiento.',['kdigo2017'])
+    ], pitfalls:['No indicar quelantes por una cifra aislada sin contexto.','No extrapolar manejo renal crónico a lisis tumoral.','Valorar Ca y P conjuntamente.']
+  }
+];
+
+function getProtocol(id) { return protocols.find(p=>p.id===id); }
+function getReference(id) { return references.find(r=>r.id===id); }
+
+
+
+const icons = {
+  grid:'<rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/>',
+  book:'<path d="M12 5c-3-2-7-2-10-1v15c3-1 7-1 10 1 3-2 7-2 10-1V4c-3-1-7-1-10 1Z"/><path d="M12 5v15"/>',
+  activity:'<path d="M2 12h4l3-8 6 16 3-8h4"/>',
+  arrow:'<path d="M5 12h14m-5-5 5 5-5 5"/>',
+  check:'<path d="m5 12 4 4L19 6"/>',
+  alert:'<path d="m12 3 10 18H2L12 3Z"/><path d="M12 9v4m0 3v1"/>',
+  flask:'<path d="M9 3h6m-5 0v6l-6 10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2L14 9V3M7 15h10"/>',
+  search:'<circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/>',
+  external:'<path d="M14 3h7v7m0-7L10 14M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/>',
+  print:'<path d="M6 9V3h12v6M6 17H3V9h18v8h-3M6 14h12v7H6Zm11-2h1"/>',
+  copy:'<rect x="8" y="8" width="13" height="13" rx="2"/><path d="M16 8V3H3v13h5"/>',
+  close:'<path d="m6 6 12 12M6 18 18 6"/>',
+  clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  heart:'<path d="M20 5c-3-3-6-1-8 1-2-2-5-4-8-1-4 4 0 8 8 15 8-7 12-11 8-15Z"/>'
+};
+const icon = (name, cls='') => `<svg class="icon ${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${icons[name] || icons.book}</svg>`;
+const esc = value => String(value ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const state = { view:'evaluation', selected:null, filter:'Todos', query:'', raw:{}, flags:{}, duration:'unknown', factor:'0.5', results:null, labs:null, error:'', calculations:[] };
+const $ = sel=>document.querySelector(sel);
+const format = (n, digits=1)=>n.toLocaleString('es-MX',{minimumFractionDigits:digits,maximumFractionDigits:digits});
+const refButtons = ids=>`<span class="citations">${ids.map(id=>`<button class="citation" data-ref="${id}" title="Ver referencia: ${esc(getReference(id).title)}">${getReference(id).year} ${icon('external')}</button>`).join('')}</span>`;
+
+function shell() {
+  $('#app').innerHTML = `
+    <aside class="sidebar">
+      <a class="brand" href="#evaluation" data-view="evaluation"><span class="brand-mark">${icon('activity')}</span><span>Medinterna<span class="brand-sub">HERRAMIENTAS CLÍNICAS</span></span></a>
+      <div class="workspace-label">ESPACIO DE TRABAJO</div>
+      <nav aria-label="Navegación principal">${[['evaluation','grid','Evaluación inicial'],['protocols','book','Protocolos clínicos'],['references','external','Bibliografía']].map(([view,i,label])=>`<button class="nav-item ${state.view===view?'active':''}" data-view="${view}" ${state.view===view?'aria-current="page"':''}>${icon(i)}<span>${label}</span>${view==='protocols'?'<span class="nav-count">10</span>':''}</button>`).join('')}</nav>
+      <div class="sidebar-note"><span class="tiny-label">ALCANCE CLÍNICO</span><p>Adultos<br>Urgencias y hospitalización</p><span class="small muted">Apoyo al juicio clínico. Las dosis requieren contexto y protocolo local.</span></div>
+      <div class="sidebar-bottom"><span class="version-dot"></span> Prototipo v0.1 <span>ES</span></div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar"><span>Medicina interna <span class="slash">/</span> Hidroelectrolitos</span><button class="review-pill" data-view="references">${icon('clock')} Bibliografía por cotejar</button></header>
+      <main id="main" tabindex="-1"></main>
+      <footer class="footer"><span>Medinterna · Algoritmos para adultos</span><span>Datos de la evaluación solo en esta sesión · Sin almacenamiento</span></footer>
+    </div>`;
+  renderMain();
+}
+
+function renderMain() {
+  if (state.view==='evaluation') renderEvaluation();
+  if (state.view==='protocols') state.selected ? renderProtocol() : renderLibrary();
+  if (state.view==='references') renderReferences();
+}
+
+function heading(eyebrow, title, description, action='') {
+  return `<div class="page-heading"><div><div class="eyebrow">${eyebrow}</div><h1>${title}</h1><p>${description}</p></div>${action}</div>`;
+}
+
+function fieldInput(key) {
+  const f=fields[key];
+  return `<label class="field" for="${key}"><span class="field-label">${f.label}<span>${f.unit}</span></span><input id="${key}" name="${key}" type="text" inputmode="decimal" autocomplete="off" placeholder="${f.placeholder}" value="${esc(state.raw[key] || '')}" aria-describedby="${key}-hint"><span class="field-hint" id="${key}-hint">${f.normal ? `Referencia: ${f.normal}` : key==='bun'?'BUN, no urea total':key==='weight'?'Para estimar agua corporal':key==='measuredOsm'?'Para calcular brecha osmolar':'Para interpretar tonicidad'}</span></label>`;
+}
+
+function renderEvaluation() {
+  $('#main').innerHTML = heading('EQUILIBRIO HIDROELECTROLÍTICO','De la clasificación al manejo.','Una evaluación estructurada, con algoritmos y fundamento bibliográfico.',`<button class="button secondary" data-action="demo">${icon('flask')} Cargar ejemplo ficticio</button>`) + `
+    <div class="workflow"><div class="workflow-title">${icon('activity')} Ruta de evaluación</div>${['Estabilizar y ECG','Confirmar muestra y tonicidad','Clasificar y buscar causa','Tratar y reevaluar'].map((text,i)=>`<div class="workflow-step"><span>${i+1}</span>${text}</div>`).join('')}</div>
+    <div class="scope-note">${icon('book')} <span><strong>Borrador para revisión clínica.</strong> Fuentes de 2023–2024 y documentos de fundamento anteriores. Actualización 2025–2026 pendiente. <button class="text-link" data-view="references">Ver estado de evidencia ${icon('arrow')}</button></span></div>
+    <div class="evaluation-layout">
+      <section class="card lab-card" aria-labelledby="lab-title">
+        <div class="card-heading"><span class="section-icon">${icon('flask')}</span><div><h2 id="lab-title">Resultados y contexto</h2><p>Introduce solo los valores disponibles.</p></div><span class="label-chip">ADULTOS</span></div>
+        <form id="evaluation-form" novalidate>
+          <div class="fields-grid">${['sodium','potassium','calcium','ionized','magnesium','phosphate'].map(fieldInput).join('')}</div>
+          <details class="additional-labs" ${['glucose','bun','weight','measuredOsm'].some(k=>state.raw[k])?'open':''}><summary>Datos para cálculos orientativos <span>Glucosa, BUN, peso y osmolalidad</span></summary><div class="fields-grid additional-grid">${['glucose','bun','weight','measuredOsm'].map(fieldInput).join('')}</div><label class="field" for="factor"><span class="field-label">Coeficiente de agua corporal estimada</span><select id="factor" name="factor">${[['0.45','0.45 · Mujer adulta mayor / menor proporción de agua'],['0.5','0.50 · Mujer adulta / varón adulto mayor'],['0.6','0.60 · Varón adulto']].map(([v,t])=>`<option value="${v}" ${state.factor===v?'selected':''}>${t}</option>`).join('')}</select><span class="field-hint">Estimación; composición corporal y deshidratación pueden reducirlo.</span></label></details>
+          <div class="context-title">CONTEXTO QUE CAMBIA EL MANEJO</div>
+          <div class="flags">${[['neuro','Síntomas neurológicos graves','Convulsiones, coma o deterioro marcado'],['ecg','Cambios en ECG o arritmia','Valoración inmediata, independientemente de la cifra'],['renal','Oliguria o eGFR <30 mL/min/1.73 m²','Ajustar líquidos y reposiciones'],['ods','Alto riesgo de desmielinización','Na ≤105, K bajo, desnutrición, alcohol o hepatopatía avanzada']].map(([key,title,hint])=>`<label class="flag"><input type="checkbox" name="${key}" ${state.flags[key]?'checked':''}><span><strong>${title}</strong><small>${hint}</small></span></label>`).join('')}</div>
+          <label class="field duration-field" for="duration"><span class="field-label">Duración de la alteración del sodio</span><select name="duration" id="duration"><option value="unknown" ${state.duration==='unknown'?'selected':''}>Desconocida · Tratar como crónica</option><option value="chronic" ${state.duration==='chronic'?'selected':''}>Crónica · ≥48 horas</option><option value="acute" ${state.duration==='acute'?'selected':''}>Aguda · <48 horas documentadas</option></select><span class="field-hint">Duración desconocida: aplicar límites de corrección de la crónica.</span></label>
+          <p id="form-error" class="form-error" role="alert">${esc(state.error)}</p>
+          <div class="form-actions"><button class="button primary" type="submit">Evaluar resultados ${icon('arrow')}</button><button class="button ghost" type="button" data-action="reset">Limpiar</button></div>
+          <p class="form-footnote">Intervalos orientativos; prevalecen el laboratorio, síntomas y contexto. La clasificación no es una prescripción.</p>
+        </form>
+      </section>
+      <section id="results" class="results-column" aria-label="Resultados de la evaluación" aria-live="polite"></section>
+    </div>
+    <section class="quick-section"><div class="section-heading"><h2>Explorar protocolos</h2><button class="text-link" data-view="protocols">Ver los 10 protocolos ${icon('arrow')}</button></div><div class="quick-grid">${['hyponatremia','hyperkalemia','hypokalemia'].map(id=>{const p=getProtocol(id);return `<button class="quick-card" data-protocol="${id}"><span class="element-symbol ${p.family.toLowerCase()}">${p.symbol}</span><div><h3>${p.name}</h3><p>${p.range}</p></div>${icon('arrow')}</button>`;}).join('')}</div></section>`;
+  renderResults();
+}
+
+function getCalculations(labs) {
+  const out=[];
+  const corr=correctedSodium(labs.sodium,labs.glucose);
+  if (corr && labs.glucose >100) out.push({title:'Sodio corregido por hiperglucemia',value:`${format(corr.low)}–${format(corr.high)}`,unit:'mmol/L',formula:'Na medido + (1.6 a 2.4) × [(glucosa − 100) / 100]',note:'Rango estimado, no objetivo de tratamiento. El factor no es constante en todas las hiperglucemias.',refs:['hillier','hyperna2023']});
+  const effective=effectiveOsmolality(labs.sodium,labs.glucose);
+  if (effective!==null) out.push({title:'Osmolalidad efectiva estimada',value:format(effective),unit:'mOsm/kg',formula:'2 × Na + glucosa / 18',note:'Aproxima tonicidad; excluye BUN. Interpretar con la osmolalidad medida y solutos no incluidos.',refs:['naeu','hyperna2023']});
+  const osm=calculatedOsmolality(labs.sodium,labs.glucose,labs.bun);
+  if (osm!==null) out.push({title:'Osmolalidad calculada',value:format(osm),unit:'mOsm/kg',formula:'2 × Na + glucosa / 18 + BUN / 2.8',note:'Glucosa y BUN en mg/dL. No introducir urea total en lugar de BUN.',refs:['hyperna2023','naeu']});
+  if (osm!==null && labs.measuredOsm!=null) out.push({title:'Brecha osmolar estimada',value:format(labs.measuredOsm-osm),unit:'mOsm/kg',formula:'Osmolalidad medida − calculada',note:'No diagnostica ni excluye una intoxicación por sí sola; depende de fórmula, tiempo y otros solutos.',refs:['naeu']});
+  const water=waterDeficit(labs.sodium,labs.weight,Number(state.factor));
+  if (water!==null) out.push({title:'Déficit de agua estimado',value:format(water,2),unit:'L',formula:`Peso × ${state.factor} × (Na / 140 − 1)`,note:'Estimación total hasta Na 140. No es una orden ni el volumen de las primeras 24 h; faltan pérdidas continuas y corrección de perfusión.',refs:['hyperna2023']});
+  return out;
+}
+
+function renderResults() {
+  const target=$('#results');
+  if (!target) return;
+  if (state.results===null) {
+    target.innerHTML=`<div class="card empty-results"><span class="empty-icon">${icon('activity')}</span><span class="tiny-label">EVALUACIÓN ORIENTATIVA</span><h2>Un punto de partida claro.</h2><p>Introduce los resultados para identificar alteraciones, criterios de prioridad y protocolos relacionados.</p><div class="empty-list"><span>${icon('check')} Clasificación por electrolito</span><span>${icon('check')} Alertas según contexto</span><span>${icon('check')} Cálculos con supuestos explícitos</span><span>${icon('check')} Referencias por recomendación</span></div></div><div class="card emergency-note">${icon('alert')}<div><h3>Primero, la estabilidad clínica</h3><p>Ante convulsiones, arritmia, shock o compromiso respiratorio, activa la atención urgente. La herramienta no debe retrasarla.</p></div></div>`;
+    return;
+  }
+  const alerts=clinicalAlerts(state.labs,state.flags);
+  const severity={high:0,moderate:1,normal:2};
+  const results=[...state.results].sort((a,b)=>severity[a.level]-severity[b.level]);
+  const abnormal=results.filter(r=>r.level!=='normal').length;
+  state.calculations=getCalculations(state.labs);
+  target.innerHTML=`<div class="section-heading result-heading"><div><span class="tiny-label">EVALUACIÓN ACTUAL</span><h2>${!results.length ? 'Valoración por criterios clínicos · Sin electrolitos' : abnormal ? `${abnormal} resultado${abnormal===1?'':'s'} fuera de intervalo` : 'Sin alteraciones en valores introducidos'}</h2></div><button class="icon-button" data-action="copy" aria-label="Copiar resumen anónimo">${icon('copy')}</button></div>
+    ${state.duration==='acute' && state.labs.sodium!=null && (state.labs.sodium<135 || state.labs.sodium>145)?'<div class="notice moderate">Duración aguda declarada: documenta el inicio. Esto no cambia automáticamente las metas ni prescribe una velocidad de corrección.</div>':''}
+    ${alerts.map(a=>`<div class="notice ${a.level}">${icon('alert')}<p>${a.text}</p></div>`).join('')}
+    ${results.map(r=>`<article class="card result-card ${r.level}"><div class="result-top"><span class="result-electrolyte">${fields[r.key].label}</span><span class="status-badge ${r.level}">${r.level==='high'?'Prioridad alta':r.level==='moderate'?'Evaluar contexto':'En intervalo'}</span></div><div class="result-number">${format(r.value,r.key==='ionized'?2:1)} <span>${r.unit}</span></div><h3>${r.label}</h3>${r.note?`<p>${r.note}</p>`:''}${r.protocol?`<button class="text-link" data-protocol="${r.protocol}">Abrir protocolo y fundamento ${icon('arrow')}</button>`:''}</article>`).join('')}
+    ${state.calculations.length?`<div class="card calculator-card"><h2>${icon('flask')} Cálculos orientativos</h2>${state.calculations.map(c=>`<div class="calculation"><h3>${c.title}</h3><div class="calculation-value">${c.value}<span>${c.unit}</span></div><code>${c.formula}</code><p>${c.note}</p>${refButtons(c.refs)}</div>`).join('')}</div>`:''}
+    <p class="results-footnote">Se evalúan solo los valores introducidos. Las banderas son criterios de valoración, no diagnósticos ni indicaciones automáticas.</p>`;
+}
+
+function evaluate() {
+  state.error='';
+  try {
+    const labs=Object.fromEntries(Object.keys(fields).map(k=>[k,parseValue(state.raw[k],k)]));
+    const results=classify(labs);
+    if (!results.length && !Object.values(state.flags).some(Boolean)) throw new Error('Introduce al menos un electrolito o selecciona un criterio clínico.');
+    state.results=results;
+    state.labs=labs;
+    renderResults();
+  } catch(e) {
+    state.error=e.message;
+    state.results=null;
+    state.labs=null;
+    renderResults();
+  }
+  $('#form-error').textContent=state.error;
+  if (state.error) $('#form-error').scrollIntoView({block:'nearest'});
+}
+
+function renderLibrary() {
+  $('#main').innerHTML=heading('BIBLIOTECA CLÍNICA','Protocolos de manejo','Diez algoritmos: clasificación, diagnóstico, tratamiento y seguimiento.')+`
+    <div class="library-toolbar"><label class="search-input">${icon('search')}<input id="protocol-search" type="search" placeholder="Buscar alteración, causa o tratamiento…" aria-label="Buscar protocolos" value="${esc(state.query)}"></label><div class="filter-tabs" aria-label="Filtrar por electrolito">${['Todos','Sodio','Potasio','Calcio','Magnesio','Fósforo'].map(f=>`<button data-filter="${f}" class="${state.filter===f?'selected':''}" aria-pressed="${state.filter===f}">${f}</button>`).join('')}</div></div>
+    <div class="scope-note">${icon('clock')} <span>Contenido de apoyo pendiente de cotejo bibliográfico y revisión institucional. <button class="text-link" data-view="references">Consultar evidencia</button></span></div><div id="protocol-grid" class="protocol-grid"></div>`;
+  renderProtocolGrid();
+}
+
+function renderProtocolGrid() {
+  const query=state.query.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
+  const list=protocols.filter(p=>{
+    const text=JSON.stringify(p).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+    return (state.filter==='Todos'||p.family===state.filter)&&(!query||text.includes(query));
+  });
+  $('#protocol-grid').innerHTML=list.length?list.map(p=>`<button class="card protocol-card" data-protocol="${p.id}"><div class="protocol-card-top"><span class="element-symbol ${p.family.toLowerCase()}">${p.symbol}</span><span class="small muted">${p.family}</span></div><h2>${p.name}</h2><p>${p.summary}</p><div class="protocol-card-footer"><span>${p.range}</span>${icon('arrow')}</div></button>`).join(''):'<div class="card no-results">No hay protocolos para esa búsqueda. Prueba otro término o cambia el filtro.</div>';
+}
+
+function renderProtocol() {
+  const p=getProtocol(state.selected);
+  if (!p) {state.selected=null;renderLibrary();return;}
+  $('#main').innerHTML=`<div class="protocol-nav"><button class="text-link" data-action="back">← Todos los protocolos</button><button class="button secondary" data-action="print">${icon('print')} Imprimir protocolo</button></div>`+heading(`${p.family.toUpperCase()} · ALGORITMO PARA ADULTOS`,p.name,p.summary)+`
+    <div class="protocol-urgency">${icon('alert')}<div><strong>Criterios de atención urgente</strong><p>${p.urgency}</p></div></div>
+    <p class="protocol-draft">Borrador clínico. Fuentes pendientes de cotejo; las dosis son pautas de referencia, sujetas a función renal, presentación y protocolo institucional.</p>
+    <div class="protocol-detail-layout"><section class="algorithm" aria-label="Algoritmo clínico">${p.steps.map((s,i)=>`<article class="card algorithm-step"><div class="step-number">${String(i+1).padStart(2,'0')}</div><div class="step-content"><h2>${s.title}</h2><ul>${s.items.map(item=>`<li>${item}</li>`).join('')}</ul><div class="rationale"><span class="tiny-label">FUNDAMENTO</span><p>${s.rationale}</p>${refButtons(s.refs)}</div></div></article>`).join('')}</section>
+    <aside class="protocol-aside"><div class="card classification-card"><h2>Clasificación</h2><div class="range-label">${p.range}</div>${p.classification.map(([label,value])=>`<div class="classification-row"><strong>${label}</strong><span>${value}</span></div>`).join('')}</div><div class="card pitfalls-card"><h2>Evitar estos errores</h2><ul>${p.pitfalls.map(s=>`<li>${s}</li>`).join('')}</ul></div><div class="card protocol-sources"><h2>Fuentes de este algoritmo</h2>${p.refs.map(id=>{const r=getReference(id);return `<button class="source-mini" data-ref="${id}"><span>${r.year}</span><strong>${r.title}</strong>${icon('external')}</button>`;}).join('')}<p class="small muted">Consulta directa y actualización 2025–2026 pendientes.</p></div></aside></div><section class="print-references"><h2>Referencias del protocolo · Cotejo pendiente</h2><ol>${p.refs.map(id=>{const r=getReference(id);return `<li>${r.authors} ${r.title}. ${r.journal}; ${r.year}. <a href="${r.url}">${r.url}</a></li>`;}).join('')}</ol></section>`;
+}
+
+function renderReferences() {
+  $('#main').innerHTML=heading('EVIDENCIA Y TRAZABILIDAD','Bibliografía clínica','Cada algoritmo enlaza las fuentes que sustentan sus decisiones.')+`
+    <section class="evidence-note"><span class="section-icon amber">${icon('clock')}</span><div><h2>${evidenceStatus.label}</h2><p>${evidenceStatus.detail}</p><p>Antes de adoptar estos algoritmos, cotejar texto completo, versiones y dosis con las fuentes originales, y completar revisión clínica y farmacéutica local. La antigüedad por sí sola no confirma ni descarta vigencia.</p></div></section>
+    <div class="reference-stats"><div><strong>${references.length}</strong><span>Fuentes identificadas</span></div><div><strong>${references.filter(r=>r.year>=2023).length}</strong><span>Publicadas en 2023–2024</span></div><div><strong>10</strong><span>Algoritmos con referencias</span></div><div><strong>Pendiente</strong><span>Cotejo web y actualización</span></div></div>
+    <div class="reference-list">${references.map((r,i)=>`<article class="card reference-card"><span class="reference-number">${String(i+1).padStart(2,'0')}</span><div><div class="reference-meta"><span class="year-badge">${r.year}</span><span>${r.journal}</span></div><h2>${r.title}</h2><p class="reference-authors">${r.authors}</p><p>${r.scope}</p><div class="reference-bottom"><span class="verification-pending">Cotejo de texto/versión pendiente</span><a href="${r.url}" target="_blank" rel="noopener noreferrer">Fuente original ${icon('external')}</a></div></div></article>`).join('')}</div>`;
+}
+
+function showSource(id) {
+  const r=getReference(id);
+  if (!r) return;
+  const d=$('#source-dialog');
+  d.innerHTML=`<div class="dialog-top"><span class="tiny-label">REFERENCIA BIBLIOGRÁFICA · ${r.year}</span><button class="icon-button" data-action="close-source" aria-label="Cerrar referencia">${icon('close')}</button></div><h2 id="source-title">${r.title}</h2><p>${r.authors}</p><p class="muted">${r.journal}</p><div class="source-scope"><strong>Qué fundamenta</strong><p>${r.scope}</p></div><p class="verification-note">Cotejo directo del texto y vigencia pendientes. No se ha confirmado cobertura de cambios de 2025–2026.</p><a class="button primary" href="${r.url}" target="_blank" rel="noopener noreferrer">Abrir fuente original ${icon('external')}</a>`;
+  d.showModal();
+}
+
+function navigate(view, selected=null) {
+  state.view=view;
+  state.selected=selected;
+  history.replaceState(null,'',`#${selected || view}`);
+  shell();
+  window.scrollTo({top:0,behavior:'instant'});
+  $('#main').focus({preventScroll:true});
+}
+
+function summaryText() {
+  const flags=Object.entries(state.flags).filter(([,v])=>v).map(([k])=>({neuro:'Síntomas neurológicos graves',ecg:'Cambios en ECG/arritmia',renal:'Oliguria/eGFR <30',ods:'Alto riesgo de desmielinización'}[k]));
+  const alerts=clinicalAlerts(state.labs,state.flags);
+  return ['MEDINTERNA · Evaluación anónima de apoyo (borrador clínico)', 'Adultos, urgencias y hospitalización. No es una prescripción.', '',
+    ...Object.entries(state.labs).filter(([,v])=>v!=null).map(([k,v])=>`${fields[k].label}: ${v} ${fields[k].unit}`),
+    `Duración de alteración de Na: ${{unknown:'desconocida',acute:'<48 h documentadas',chronic:'≥48 h'}[state.duration]}`,
+    ...(flags.length?['Contexto: '+flags.join('; ')]:[]),'',
+    ...state.results.map(r=>`${fields[r.key].label}: ${r.label}. ${r.note}`),'',
+    ...alerts.map(a=>`ALERTA: ${a.text}`),'',
+    ...state.calculations.map(c=>`${c.title}: ${c.value} ${c.unit}. ${c.formula}. ${c.note}`),'',
+    'Protocolos relacionados:',...([...new Set(state.results.map(r=>r.protocol).filter(Boolean))].map(id=>{
+      const p=getProtocol(id);return `${p.name}: ${p.refs.map(rid=>`${getReference(rid).title} (${getReference(rid).year}) — ${getReference(rid).url}`).join('; ')}`;
+    })), '', evidenceStatus.detail].join('\n');
+}
+
+let toastTimer;
+function toast(text) {$('#toast').textContent=text;$('#toast').classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('#toast').classList.remove('visible'),3500);}
+
+document.addEventListener('click',async e=>{
+  const b=e.target.closest('[data-view],[data-protocol],[data-filter],[data-ref],[data-action]');
+  if (!b) return;
+  if (b.dataset.view) {e.preventDefault();navigate(b.dataset.view);return;}
+  if (b.dataset.protocol) {navigate('protocols',b.dataset.protocol);return;}
+  if (b.dataset.ref) {showSource(b.dataset.ref);return;}
+  if (b.dataset.filter) {state.filter=b.dataset.filter;renderLibrary();return;}
+  const action=b.dataset.action;
+  if (action==='close-source') $('#source-dialog').close();
+  if (action==='back') navigate('protocols');
+  if (action==='print') window.print();
+  if (action==='reset') {state.raw={};state.flags={};state.results=null;state.labs=null;state.error='';state.duration='unknown';state.factor='0.5';renderEvaluation();}
+  if (action==='demo') {state.raw={sodium:'126',potassium:'2.9',magnesium:'1.3',glucose:'100',bun:'16',weight:'70'};state.flags={};state.duration='unknown';state.results=null;state.error='';renderEvaluation();evaluate();toast('Ejemplo ficticio cargado. No corresponde a un paciente real.');}
+  if (action==='copy' && state.results!==null) {
+    try {await navigator.clipboard.writeText(summaryText());toast('Resumen anónimo copiado con referencias.');}
+    catch {toast('El navegador no permitió copiar. Usa la impresión del protocolo.');}
+  }
+});
+document.addEventListener('submit',e=>{if (e.target.id==='evaluation-form') {e.preventDefault();evaluate();}});
+document.addEventListener('input',e=>{
+  if (e.target.id==='protocol-search') {state.query=e.target.value;renderProtocolGrid();return;}
+  if (e.target.closest('#evaluation-form')) {
+    const input=e.target;
+    if (input.name in fields) state.raw[input.name]=input.value;
+    else if (['neuro','ecg','renal','ods'].includes(input.name)) state.flags[input.name]=input.checked;
+    else if (input.name==='duration') state.duration=input.value;
+    else if (input.name==='factor') state.factor=input.value;
+    state.results=null;state.labs=null;state.error='';
+    $('#form-error').textContent='';renderResults();
+  }
+});
+$('#source-dialog').addEventListener('click',e=>{if (e.target===$('#source-dialog')) {const r=e.target.getBoundingClientRect();if (e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close();}});
+const initial=location.hash.slice(1);
+if (getProtocol(initial)) {state.view='protocols';state.selected=initial;}
+else if (['evaluation','protocols','references'].includes(initial)) state.view=initial;
+shell();
+
+</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <div id="app"></div>
+  <dialog id="source-dialog" aria-labelledby="source-title"></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript>Medinterna necesita JavaScript para evaluar resultados y mostrar los algoritmos.</noscript>
+</body>
+</html>
